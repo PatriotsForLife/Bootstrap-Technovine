@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	background: #f1f2fa;
+	font-family: 'Poppins', sans-serif;
+}
+
+hr {
+	border: 1.5px solid #0b5ed7
+}
+
+.crd {
+	background: #f1f2fa;
+	transition: all;
+}
+
+.crd:hover {
+	background: #0b5ed7;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.card img {
+	margin: auto;
+	
+}
+
+#rounded_circle {
+	width: 76px;
+    aspect-ratio: 1;
+    background-color: silver;
+}
+
+footer a {
+	color: #fff;
+}
+
+#footer {
+	color: #fff;
+}
+
+#copyright {
+	border-top: 1px solid #333 ;
+}
+
+.c-item {
+	height: 480px;
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
