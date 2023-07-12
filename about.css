@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	background: hsl(233, 47%, 96%);
+	font-family: 'Poppins', sans-serif;
+}
+
+#copyright {
+	border-top: 1px solid hsl(0, 0%, 20%) ;
+}
+
+.c-item {
+	height: 480px;
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+#about:after {
+	background: none repeat scroll 0 0 hsl(216, 90%, 44%);
+	bottom: -10px;
+	content: "";
+	display: block;
+	height: 5px;
+	position: relative;
+	width: 100px;
+ }

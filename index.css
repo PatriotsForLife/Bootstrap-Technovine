@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-	background: #f1f2fa;
+	background: hsl(233, 47%, 96%);
 	font-family: 'Poppins', sans-serif;
 }
 
 hr {
-	border: 1.5px solid #0b5ed7
+	border: 1.5px solid hsl(216, 90%, 44%)
 }
 
 .crd {
-	background: #f1f2fa;
+	background: hsl(233, 47%, 96%);
 	transition: all;
 }
 
 .crd:hover {
-	background: #0b5ed7;
+	background: hsl(216, 90%, 44%);
 	color: #fff;
 	transition: 0.5s;
 }
@@ -28,19 +28,19 @@ hr {
 #rounded_circle {
 	width: 76px;
     aspect-ratio: 1;
-    background-color: silver;
+    background-color: hsl(0, 0%, 75%);
 }
 
 footer a {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 
 #footer {
-	color: #fff;
+	color: hsl(0, 0%, 100%);
 }
 
 #copyright {
-	border-top: 1px solid #333 ;
+	border-top: 1px solid hsl(0, 0%, 20%) ;
 }
 
 .c-item {
