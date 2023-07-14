@@ -87,6 +87,9 @@ body {
     
 }
 
-
+#info {
+	display: flex;
+	vertical-align: middle;
+}
 
 
