@@ -1,4 +1,4 @@
-body {
+/* body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(C:/Users/NewMayoAyo/Documents/_Dev/projects/Bootstrap-Technovine/assets/contact004.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -40,4 +40,47 @@ h1:after {
 .col-md-3:hover {
 	box-shadow: 5px 7px 9px -3px rgba(0, 0, 0, 0.5);
 	cursor: pointer;
+} */
+
+body {
+	background: hsl(233, 47%, 96%);
+	font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+	color: hsl(0, 0%, 100%);
+}
+
+#footer {
+	color: hsl(0, 0%, 100%);
+}
+
+#copyright {
+	border-top: 1px solid hsl(0, 0%, 20%) ;
+}
+
+.c-item {
+	height: 480px;
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+}
+
+#crd {
+	background: hsl(210, 45%, 30%);
 }
