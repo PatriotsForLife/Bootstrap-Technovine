@@ -16,6 +16,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="./css/index.css" />
 <link rel="stylesheet" href="./css/dropdown.css" />
+<link rel="stylesheet" href="./css/login-modal.css">
 <link
 	      rel="stylesheet"
 	      data-purpose="Layout StyleSheet"
@@ -114,7 +115,7 @@ setTimeout(() => {
 		<li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
 		<li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
 		<li class="nav-item dropdown" id="dropdown">
-			<a class="nav-link dropdown-toggle" href="/services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			<a class="nav-link dropdown-toggle" href="/services.html" role="button"  aria-expanded="false">
 			Services
 			</a>
 			<ul class="dropdown-menu">
@@ -132,6 +133,47 @@ setTimeout(() => {
 			</ul>
 		</li>
 		<li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+    <!-- LOGIN/SIGNUP MODAL SECTION START -->
+    
+		<button 
+    type="button" 
+    class="btn btn-primary" 
+    data-bs-toggle="modal" 
+    data-bs-target="#loginmodal"
+  >
+    Login/Signup
+  </button>
+  <div id="loginmodal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button 
+            type="button" 
+            class="btn-close btn-close-white" 
+            data-bs-dismiss="modal" 
+          >
+          </button>
+          <div class="myform bg-dark">
+            <h1 class="text-center">Login Form</h1>
+            <form action="#">
+              <div class="mb-3 mt-3">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="password">Password</label>
+                <input type="passeord" class="form-control">
+              </div>
+              <button type="button" class="btn btn-light mt-3">LOGIN</button>
+              <p>Don't have an account? <a href="#">Signup</a> </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- LOGIN/SIGNUP MODAL SECTION CLOSE -->
+    
 		</ul>
 	</div>
 	<!-- TOGGLE MENU CLOSE -->
@@ -584,7 +626,7 @@ Through the utilization of state-of-the-art equipment, we provide essential hand
                 </div>
                 <div class="col-lg-4">
                   <div class="card bg-light text-dark my-3">
-                    <img src="./assets/Generic-Profile.png" class="img-fluid rounded-circle mt-4" id="rounded_circle" />
+                    <img src="./assets/Generic-Profile.jpg" class="img-fluid rounded-circle mt-4" id="rounded_circle" />
                     <div class="card-body">
                       <p class="lead text-center text-muted mt-4">Matt Franklin</p>
                       <p>Did a good job for us.
@@ -610,7 +652,7 @@ Through the utilization of state-of-the-art equipment, we provide essential hand
               <div class="row">
                 <div class="col-lg-4">
                   <div class="card bg-light text-dark my-3">
-                    <img src="./assets/Generic-Profile.png" class="img-fluid rounded-circle mt-4" id="rounded_circle" />
+                    <img src="./assets/Generic-Profile.jpg" class="img-fluid rounded-circle mt-4" id="rounded_circle" />
                     <div class="card-body">
                       <p class="lead text-center text-muted mt-4">Arthur Jenkin</p>
                       <p>Technovine Solutions ALWAYS does a GREAT job for us. HIGHLY recommend their services. Thank you.
