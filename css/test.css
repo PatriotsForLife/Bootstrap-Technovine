@@ -1,4 +1,13 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+.crd {
+	background: hsl(233, 47%, 96%);
+	transition: all;
+}
+
+.crd:hover {
+	background: hsl(216, 90%, 44%);
+	color: #fff;
+	transition: 0.5s;
+} 
 
 body {
 	background: hsl(233, 47%, 96%);
@@ -65,14 +74,25 @@ footer a {
 	}
 }
 
+footer li {
+	background: hsl(0, 0%, 100%);
+	transition: all;
+}
+
 footer li:hover {
 	color: hsl(24, 83%, 65%);
-	transition: 0.2s;
+	transition: 0.5s;
+}
+
+footer i {
+	background: hsl(0, 0%, 100%);
+	
+	transition: all;
 }
 
 footer i:hover {
 	color: hsl(24, 83%, 65%);
-	transition: 0.2s;
+	transition: 0.5s;
 }
 
 /* #navmenu li{
@@ -84,4 +104,3 @@ footer i:hover {
 	background: hsl(24, 83%, 65%);
 	transition: 0.5s;
 } */
-
