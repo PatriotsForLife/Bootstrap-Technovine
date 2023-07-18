@@ -23,7 +23,7 @@
 	padding: 0px;
 }
 
-h1{
+#modal-styling h1 {
 	font-size: 2.3em;
 	font-weight: bold;
 }
@@ -61,17 +61,17 @@ h1{
 	color: #333;
 }
 
-p {
+#modal-styling p {
 	text-align: center;
 	padding-top: 2em;
 	color: grey;
 }
 
-p a {
+#modal-styling p a {
 	color: #e1e1e1;
 	text-decoration: none;
 }
 
-p a:hover {
+#modal-styling p a:hover {
 	color: #fff;
 }

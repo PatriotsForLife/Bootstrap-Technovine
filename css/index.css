@@ -85,3 +85,6 @@ footer i:hover {
 	transition: 0.5s;
 } */
 
+#sub-header {
+	color: hsl(24, 83%, 65%);
+}

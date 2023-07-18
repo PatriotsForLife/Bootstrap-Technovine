@@ -65,3 +65,7 @@ footer a {
 		width: 150px;
 	 }
 }
+
+#sub-header {
+	color: hsl(24, 83%, 65%);
+}
