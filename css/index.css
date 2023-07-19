@@ -44,7 +44,7 @@ footer a {
 }
 
 .c-item {
-	height: 480px;
+	height: 900px;
 }
 
 .c-img {
@@ -65,14 +65,16 @@ footer a {
 	}
 }
 
-footer li:hover {
-	color: hsl(24, 83%, 65%);
-	transition: 0.2s;
-}
-
-footer i:hover {
-	color: hsl(24, 83%, 65%);
-	transition: 0.2s;
+@media (min-width: 576px) {
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
 }
 
 /* #navmenu li{
@@ -86,5 +88,5 @@ footer i:hover {
 } */
 
 #sub-header {
-	color: hsl(24, 83%, 65%);
+	color: hsl(18, 100%, 62%);
 }
