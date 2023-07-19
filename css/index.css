@@ -61,6 +61,7 @@ footer a {
 @media (min-width: 576px) {
 	.dropdown:hover > .dropdown-menu {
 		display: block;
+		background-color: hsl(210, 45%, 30%);
 		margin-top: 0;
 	}
 }
@@ -89,4 +90,8 @@ footer a {
 
 #sub-header {
 	color: hsl(18, 100%, 62%);
+}
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
 }
