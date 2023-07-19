@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 body {
 	background: hsl(233, 47%, 96%);
-	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
 }
 
 footer a {
@@ -68,4 +68,53 @@ footer a {
 
 #sub-header {
 	color: hsl(24, 83%, 65%);
+}
+
+@media (min-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+}
+
+
+
+@media (min-width: 576px) {
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+
+#navmenu li{
+	background:hsl(210, 45%, 30%);
+	transition: all;
+}
+
+#navmenu li:hover {
+	background: hsl(210, 55%, 41%);
+	transition: 0.5s;
+}
+
+#sub-header {
+	color: hsl(18, 100%, 62%);
+}
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
 }

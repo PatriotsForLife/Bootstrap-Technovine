@@ -89,15 +89,15 @@ footer a {
 	}
 }
 
-/* #navmenu li{
-	background:hsl(0, 0%, 100%);
+#navmenu li{
+	background:hsl(210, 45%, 30%);
 	transition: all;
 }
 
 #navmenu li:hover {
-	background: hsl(24, 83%, 65%);
+	background: hsl(210, 55%, 41%);
 	transition: 0.5s;
-} */
+}
 
 #sub-header {
 	color: hsl(18, 100%, 62%);
