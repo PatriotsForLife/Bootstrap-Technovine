@@ -104,45 +104,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           </ul>
         </li>
         <li class="nav-item"><a href="/contact.html" class="nav-link text-white">Contact</a></li>
+        <!-- TOGGLE MENU CLOSE -->
+
         <!-- LOGIN/SIGNUP MODAL SECTION START -->
     
-		<button 
-    type="button" 
-    class="btn btn-primary" 
-    data-bs-toggle="modal" 
-    data-bs-target="#loginmodal"
-  >
-    Login/Signup
-  </button>
-  <div id="loginmodal" class="modal fade">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button 
-            type="button" 
-            class="btn-close btn-close-white" 
-            data-bs-dismiss="modal" 
-          >
-          </button>
-          <div class="myform bg-dark">
-            <h1 class="text-center" id="modal-styling">Login Form</h1>
-            <form action="#">
-              <div class="mb-3 mt-3">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control">
+        <button 
+        type="button" 
+        class="btn btn-primary" 
+        data-bs-toggle="modal" 
+        data-bs-target="#loginmodal"
+      >
+        Login/Signup
+      </button>
+      <div id="loginmodal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button 
+                type="button" 
+                class="btn-close btn-close-white" 
+                data-bs-dismiss="modal" 
+              >
+              </button>
+              <div class="myform bg-dark">
+                <h1 class="text-center" id="modal-styling">Login Form</h1>
+                <form action="#">
+                  <div class="mb-3 mt-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="mb-3 mt-3">
+                    <label for="password">Password</label>
+                    <input type="passeord" class="form-control">
+                  </div>
+                  <button type="button" class="btn btn-light mt-3">LOGIN</button>
+                  <p id="modal-styling">Don't have an account? <a href="#" id="modal-styling">Signup</a> </p>
+                </form>
               </div>
-              <div class="mb-3 mt-3">
-                <label for="password">Password</label>
-                <input type="passeord" class="form-control">
-              </div>
-              <button type="button" class="btn btn-light mt-3">LOGIN</button>
-              <p id="modal-styling">Don't have an account? <a href="#" id="modal-styling">Signup</a> </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
     <!-- LOGIN/SIGNUP MODAL SECTION CLOSE -->
         </ul>
       </div>

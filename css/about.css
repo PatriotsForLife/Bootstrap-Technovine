@@ -37,6 +37,45 @@ body {
 	width: 100px;
  }
 
+ @media (min-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+}
+
+
+
+@media (min-width: 576px) {
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+
+#sub-header {
+	color: hsl(18, 100%, 62%);
+}
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
+}
+
 /* LEVALI'S CSS CODE START */
 /* @charset "utf-8";
 /* CSS Document /
