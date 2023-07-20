@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Home | </title>
+<title>Home | Technovine Solutions</title>
 
 <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 
@@ -14,9 +14,9 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="../css/index.css" />
+<link rel="stylesheet" href="./css/index.css" />
 <!-- <link rel="stylesheet" href="./css/dropdown.css" /> -->
-
+<link rel="stylesheet" href="./css/login-modal.css">
 <link
 	      rel="stylesheet"
 	      data-purpose="Layout StyleSheet"
@@ -32,9 +32,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	      href="/css/app-wa-8d95b745961f6b33ab3aa1b98a45291a.css?vsn=d"
 	    >
 
-	      
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<link
+	      <link
 	        rel="stylesheet"
 
 	        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
@@ -59,150 +57,104 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	      >
         <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
   </head>
   <body>
-	 <!-- NAVIGATION BAR START -->
-	 <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-		<div class="container">
-		  <a href="/index.html">
-			<img src="./assets/logo-topnav.png" height="45" width="225" class="img-fluid"/>
-		  </a>
-  
-		  <!-- TOGGLE MENU START -->
-		  <button
-			type="button"
-			class="navbar-toggler"
-			data-bs-toggle="collapse"
-			data-bs-target="#navmenu"
-		  >
-			<span class="navbar-toggler-icon">
-		  </button>
-		  <!-- TOGGLE MENU CLOSE -->
-  
-		  <!-- TOGGLE MENU START -->
-		<div class="collapse navbar-collapse" id="navmenu">
-		  <ul class="navbar-nav ms-auto">
-		  <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-		  <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-		  <li class="nav-item dropdown" id="dropdown">
-			<a class="nav-link dropdown-toggle" href="/services.html" role="button"  aria-expanded="false" data-bs-toggle="dropdown">
-			Services
-			</a>
-			<ul class="dropdown-menu">
-			<!-- <li><a class="dropdown-item" href="#">Action</a></li>
-			<li><a class="dropdown-item" href="#">Another action</a></li> -->
-			<!-- <li><hr class="dropdown-divider"></li> -->
-			<li><a class="dropdown-item" href="/cctv.html">CCTV Services</a></li>
-			<li><a class="dropdown-item" href="/datacenter.html">Datacenter Support</a></li>
-			<li><a class="dropdown-item" href="/digital-signage.html">Digital Signage</a></li>
-			<li><a class="dropdown-item" href="/gen-support.html">General Support</a></li>
-			<li><a class="dropdown-item" href="/net-support.html">Network Support</a></li>
-			<li><a class="dropdown-item" href="/pos.html">POS Services</a></li>
-			<li><a class="dropdown-item" href="/telecom.html">Telecom Services</a></li>
-			
-			</ul>
-		  </li>
-		  <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
-		  
-		  </ul>
-		</div>
-		<!-- TOGGLE MENU CLOSE -->
-		</div>
-	  
-	  </nav>
-	  <!-- NAVIGATION BAR CLOSE -->
-  
-	  <!-- SHOWCASE START -->
-	  <section>
-		<div id="herocarousel" class="carousel slide" data-bs-ride="carousel" >
-		  <div class="carousel-indicators">
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-			<button type="button" data-bs-target="#herocarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-		  </div>
-		  <div class="carousel-inner">
-			<div class="carousel-item active c-item">
-			<img src="./assets/networking-connections-004.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/cctv.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/datacenter-002 - Copy.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize>Project Name_____">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/digital-signage-005.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize>Project Name_____">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/general-support-001.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize>Project Name_____">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/net-support.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize>Project Name_____">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/pos.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize>Project Name_____">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-			<div class="carousel-item c-item">
-			<img src="./assets/telecom.jpeg" class="d-block w-100 c-img" alt="...">
-			<div class="carousel-caption top-0 mt-4">
-			  <p class="mt-5 text-uppercase">Get your unique solution</p>
-			  <h1 class="display-1 fw-bolder text-capitalize>Project Name_____">Project Name_____</h1>
-			  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Submit a Ticket</button>
-			  </div>
-			</div>
-		  </div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#herocarousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#herocarousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		  </button>
-		  </div> 
-		
-	  </section>
-	  <!-- SHOWCASE CLOSE -->
+    
+    <!-- NAVIGATION BAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar-color">
+      <div class="container">
+        <a href="/index.html">
+          <img src="./assets/logo-topnav.png" height="45" width="225" class="img-fluid"/>
+        </a>
 
+        <!-- TOGGLE MENU START -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon">
+        </button>
+        <!-- TOGGLE MENU CLOSE -->
+
+        <!-- TOGGLE MENU START -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="/index.html" class="nav-link text-white">Home</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link text-white">About</a></li>
+        <li class="nav-item dropdown" id="dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="/services.html" role="button"  aria-expanded="false" data-bs-toggle="dropdown">
+          Services
+          </a>
+          <ul class="dropdown-menu">
+          <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li> -->
+          <!-- <li><hr class="dropdown-divider"></li> -->
+          <li><a class="dropdown-item   text-white" href="/cctv.html">CCTV Services</a></li>
+          <li><a class="dropdown-item text-white " href="/datacenter.html">Datacenter Support</a></li>
+          <li><a class="dropdown-item text-white" href="/digital-signage.html">Digital Signage</a></li>
+          <li><a class="dropdown-item text-white" href="/gen-support.html">General Support</a></li>
+          <li><a class="dropdown-item text-white " href="/net-support.html">Network Support</a></li>
+          <li><a class="dropdown-item text-white " href="/pos.html">POS Services</a></li>
+          <li><a class="dropdown-item text-white " href="/telecom.html">Telecom Services</a></li>
+          
+          </ul>
+        </li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link text-white">Contact</a></li>
+        <!-- TOGGLE MENU CLOSE -->
+
+        <!-- LOGIN/SIGNUP MODAL SECTION START -->
+    
+        <button 
+        type="button" 
+        class="btn btn-primary" 
+        data-bs-toggle="modal" 
+        data-bs-target="#loginmodal"
+      >
+        Login/Signup
+      </button>
+      <div id="loginmodal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button 
+                type="button" 
+                class="btn-close btn-close-white" 
+                data-bs-dismiss="modal" 
+              >
+              </button>
+              <div class="myform bg-dark">
+                <h1 class="text-center" id="modal-styling">Login Form</h1>
+                <form action="#">
+                  <div class="mb-3 mt-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="mb-3 mt-3">
+                    <label for="password">Password</label>
+                    <input type="passeord" class="form-control">
+                  </div>
+                  <button type="button" class="btn btn-light mt-3">LOGIN</button>
+                  <p id="modal-styling">Don't have an account? <a href="#" id="modal-styling">Signup</a> </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- LOGIN/SIGNUP MODAL SECTION CLOSE -->
+        </ul>
+      </div>
+      <!-- TOGGLE MENU CLOSE -->
+      </div>
+    
+    </nav>
+    <!-- NAVIGATION BAR CLOSE -->
+
+    
   </body>
 </html>
+
