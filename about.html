@@ -47,7 +47,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 			<li class="nav-item"><a href="/index.html" class="nav-link text-white">Home</a></li>
 			<li class="nav-item"><a href="/about.html" class="nav-link text-white">About</a></li>
 			<li class="nav-item dropdown" id="dropdown">
-			  <a class="nav-link dropdown-toggle text-white" href="/services.html" role="button"  aria-expanded="false" data-bs-toggle="dropdown">
+			  <a class="nav-link text-white" href="/services.html" role="button"  aria-expanded="false" id="servicesDropdown">
 			  Services
 			  </a>
 			  <ul class="dropdown-menu">
@@ -65,6 +65,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 			  </ul>
 			</li>
 			<li class="nav-item"><a href="/contact.html" class="nav-link text-white">Contact</a></li>
+
+			<script>
+				// Get the Services dropdown link element
+				const servicesDropdown = document.getElementById('servicesDropdown');
+			  
+				// Redirect to the services page when the dropdown link is clicked
+				servicesDropdown.addEventListener('click', function(event) {
+				  event.preventDefault(); // Prevent default link behavior
+				  window.location.href = this.getAttribute('href');
+				});
+			  
+				// Add the hover effect on desktop devices
+				if (window.matchMedia('(min-width: 576px)').matches) {
+				  // When the mouse enters the dropdown link, show the dropdown menu
+				  servicesDropdown.addEventListener('mouseenter', function() {
+					this.setAttribute('aria-expanded', 'true');
+					this.nextElementSibling.classList.add('show');
+				  });
+			  
+				  // When the mouse leaves the dropdown link or the dropdown menu, hide the dropdown menu
+				  servicesDropdown.addEventListener('mouseleave', function() {
+					this.setAttribute('aria-expanded', 'false');
+					this.nextElementSibling.classList.remove('show');
+				  });
+				}
+			  </script>
 			<!-- TOGGLE MENU CLOSE -->
 		</div>
 
