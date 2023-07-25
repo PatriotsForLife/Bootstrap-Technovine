@@ -33,6 +33,13 @@ hr {
 
 footer a {
 	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+}
+
+footer a  i {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	color:white;
 }
 
 #footer {

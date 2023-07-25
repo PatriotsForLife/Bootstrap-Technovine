@@ -101,3 +101,9 @@ h3:after {
 		opacity: 1;
 	}
 }
+
+footer a  i {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	color:white;
+}
