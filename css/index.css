@@ -9,6 +9,14 @@ hr {
 	border: 1.5px solid hsl(210, 55%, 41%)
 }
 
+#about-heading {
+	font-weight: 300;
+}
+
+#mission-heading {
+	font-weight: 300;
+}
+
 .crd {
 	background: hsl(233, 47%, 96%);
 	transition: all;
