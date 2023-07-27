@@ -163,3 +163,9 @@ footer a  i {
 		opacity: 1;
 	}
 }
+
+@media screen and (min-width: 900px) {
+	.carousel-inner{
+	 
+	 }
+   }
