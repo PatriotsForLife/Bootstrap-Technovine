@@ -35,6 +35,7 @@ h3:after {
 	height: 2px;
 	position: relative;
 	width: 100px;
+	font-weight: 300;
  }
 
  @media (min-width: 576px) {
