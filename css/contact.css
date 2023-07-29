@@ -42,7 +42,7 @@
 .right button {
 	border: none;
 	border-radius: 0;
-	background: #252525;
+	background: hsl(24, 83%, 65%);
 	width: 180px;
 	color: #fff;
 	padding: 15px 0;
