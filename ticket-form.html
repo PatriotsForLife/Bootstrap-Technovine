@@ -132,16 +132,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	<div id="herocarousel" class="carousel slide" data-bs-ride="carousel" >
 		  <div class="carousel-inner">
 			<div class="carousel-item active c-item">
-			  <img src="./assets/contact004.jpeg" class="d-block w-100 c-img" alt="...">
+			  <img src="/assets/ticket-form.jpeg" class="d-block w-100 c-img" alt="...">
 			  <div class="carousel-caption top-0 mt-5 pt-4">
-				  <p class="mt-5 text-uppercase text-start" id="sub-header">Contact Us</p>
+				  <p class="mt-5 text-uppercase text-start" id="sub-header">Submit a Ticket</p>
 				  <h1 class="display-1 fw-bolder text-capitalize text-start">Technovine Solutions</h1>
 				  <div class="text-center me-5 pe-5">
 					<div class="text-center me-5 pe-5">
 						<div class="text-center me-5 pe-5">
 							<div class="text-center me-5 pe-5">
 								<div class="text-center pe-5 me-5">
-									<button class="btn btn-primary px-4 py-2 fs-5 mt-5" id="button">Submit&nbsp;a&nbsp;Ticket</button>
+									
 								  </div>
 							  </div>
 						  </div>
@@ -160,7 +160,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   </section>
   <!-- SHOWCASE CLOSE -->
   <!-- TICKET RQUEST FORM START -->
-  <div class="container mt-5 mb-5">
+  <div class="container mt-5 mb-5" id="container-background">
+	<h1 class="mb-4">Submit A Ticket</h1>
 	<form action="https://formsubmit.co/mayowaogunbowale@gmail.com" method="POST">
 		<div class="mb-3">
 			<label for="Name" class="form-label">Full Name</label>
@@ -176,7 +177,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		</div>
 		<div class="mb-3">
 			<label for="Message" class="form-label">Type of Work</label>
-			<select class="form-select select-control" data-width="auto" aria-placeholder="">
+			<select class="form-select select-control" data-width="auto" aria-placeholder="" name="select">
 				<option selected>Select A Category</option>
 				<option class="select-control" value="1">CCTV / Alarm Systems</option>
 				<option class="select-control" value="2">Desktop/Laptop</option>
@@ -206,7 +207,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		</div>
 		<input type="hidden" name="_next" value="https://patriotsforlife.github.io/Bootstrap-Technovine/thank-you.html">
 		<input type="hidden" name="_subject" value="New Ticket Request Submission!">
-		<button type="submit" class="btn btn-primary" id="button">Submit</button>
+		<button type="submit" class="btn btn-primary mb-3" id="submit-button">Submit</button>
 		</form>
   </div>
   <!-- TICKET RQUEST FORM CLOSE -->
