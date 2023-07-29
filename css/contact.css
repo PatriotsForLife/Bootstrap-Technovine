@@ -42,7 +42,7 @@
 .right button {
 	border: none;
 	border-radius: 0;
-	background: hsl(24, 83%, 65%);
+	background: hsl(18, 100%, 62%);
 	width: 180px;
 	color: #fff;
 	padding: 15px 0;
@@ -52,7 +52,7 @@
 	cursor: pointer;
 }
 .right button:hover{
-    background-color: hsl(24, 83%, 65%);
+    background-color: hsl(18, 100%, 62%);
 }
 
 
