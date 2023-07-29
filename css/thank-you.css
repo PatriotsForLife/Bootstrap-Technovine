@@ -3,12 +3,8 @@ html p {
 	font-family: "Montserrat", sans-serif;
 }
 
-#navbar-color {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 100;
-	
-}
-}
+
+
 
 /*
 #   $$$$$$\  $$\           $$\                 $$\
@@ -51,13 +47,7 @@ body {
 	word-wrap: break-word;
 	-webkit-font-smoothing: antialiased
 }
-a:link,
-a:visited {
-	color: #00c2a8;
-}
-a:hover,
-a:active {
-	color: #03a994;
+
 }
 
 /*
@@ -106,6 +96,7 @@ a:active {
 	font-size: 4.0625rem;
 	line-height: 1;
 	color: #24b663;
+	
 }
 .main-content__body {
 	margin: 20px 0 0;
@@ -113,6 +104,9 @@ a:active {
 	line-height: 1.4;
 }
 
+/* #chechmark {
+	font-size: large;
+} */
 
 /*
 #   $$$$$$\  $$\   $$\                     $$$$$$$$\                   $$\
