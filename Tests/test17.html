@@ -1,22 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Home | </title>
-
-<meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-
-<link rel="stylesheet" href="/_bridgetown/static/css/main.c7d4dd3f1984a290e9be.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Ticket | </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="../css/index.css" />
-<!-- <link rel="stylesheet" href="./css/dropdown.css" /> -->
-
+<link rel="stylesheet" href="./css/index.css" />
+<link rel="stylesheet" href="./css/contact.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <link
 	      rel="stylesheet"
 	      data-purpose="Layout StyleSheet"
@@ -49,60 +47,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
 	        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
 	      >
-
-	      <link
-	        rel="stylesheet"
-
-	        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
-	      >
-        <link rel="icon" type="image/x-icon" href="">
-        <link rel="stylesheet" href="../css/contact-form.css">
+<link rel="icon" type="image/x-icon" href="">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-  </head>
-  <body>
-    <!-- CONTACT FORM SECTION START -->
-	<section class="mb-5">
-		<div class="form-area">
-			<div class="container">
-				<div class="row single-form g-0">
-					<div class="col-sm-12 col-lg-6">
-						<div class="left">
-							<h2><span>Contact Us for</span> <br>Business Inquiries</h2>
-							
-							<div class="mt-5 text-white" id="info" >
-							<i class="fa-solid fa-phone fa-2x ms-2"></i>
-					
-							<p class="ms-2"></p>
-							</div>
-							<div class="mt-5 text-white" id="info">
-								<i class="fa-solid fa-envelope fa-2x ms-2"></i>
-								<p class="ms-2"></p>
-							</div>
-							
-						</div>
-					</div>
-					<div class="col-sm-12 col-lg-6">
-						<div class="right">
-						<i class="fa fa-caret-left"></i>
-							<form action="https://formsubmit.co/myemail" method="POST">
-							<div class="mb-3">
-								<label for="Name" class="form-label">Full Name</label>
-								<input type="text" class="form-control" placeholder="Your Full Name" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="Email" class="form-label">Email Address</label>
-								<input type="email" class="form-control" placeholder="Your Email" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="Message" class="form-label">Message</label>
-								<textarea type="password" class="form-control" placeholder="How can we help you?" required></textarea>
-							</div>
-							
-							<input type="hidden" name="_subject" value="New Contact Form Inquiry!">
-							<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-  </body>
+    <link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/ticket-form.css">
+</head>
+<body>
+  <!-- TICKET RQUEST FORM START -->
+  <div class="container mt-5 mb-5" id="container-background">
+	<h1 class="mb-4">Submit A Ticket</h1>
+	<form action="https://formsubmit.co/email@gmail.com" method="POST">
+		<div class="mb-3">
+			<label for="Name" class="form-label">Full Name</label>
+			<input type="text" class="form-control" placeholder="Your Full Name" name="name" aria-describedby="emailHelp" required>
+		</div>
+		<div class="mb-3">
+			<label for="Email" class="form-label">Email Address</label>
+			<input type="email" class="form-control" placeholder="Your Email Address" name="email" aria-describedby="emailHelp" required>
+		</div>
+		<div class="mb-3">
+			<label for="Number" class="form-label">Phone Number</label>
+			<input type="etel" class="form-control" placeholder="Your Phone Number" name="tel" aria-describedby="emailHelp" required>
+		</div>
+		<div class="mb-3">
+			<label for="Message" class="form-label">Type of Work</label>
+			<select class="form-select select-control" data-width="auto" aria-placeholder="" name="type of work" required>
+				<option selected>Select A Category</option>
+				<option class="select-control" value="1" name="type of work">CCTV / Alarm Systems</option>
+				<option class="select-control" value="2">Desktop/Laptop</option>
+				<option class="select-control" value="3">Fiber Cabling</option>
+				<option class="select-control" value="4">General Tasks</option>
+				<option class="select-control" value="5">Kiosk</option>
+				<option class="select-control" value="6">Low Voltage Cabling</option>
+				<option class="select-control" value="7">Networking</option>
+				<option class="select-control" value="8">Point of Sale (POS)</option>
+				<option class="select-control" value="9">Printer</option>
+				<option class="select-control" value="10">Pro A/V, Digital Signage</option>
+				<option class="select-control" value="11">Project management</option>
+				<option class="select-control" value="12">Server Hardware/Software</option>
+				<option class="select-control" value="13">Software Development</option>
+				<option class="select-control" value="14">Structured Cabling</option>
+				<option class="select-control" value="15">Telecom / VOIP</option>
+				<option class="select-control" value="16">Other</option>
+			  </select>
+		</div>
+		<div class="mb-3">
+			<label for="Message" class="form-label">Description of the Problem</label>
+			<textarea type="text" class="form-control" placeholder="Describe the problem clearly. (What is the problem, when the problem started, where did the problem begin, etc. )" name="problem description" required></textarea>
+		</div>
+		<div class="mb-3">
+			<label for="Message" class="form-label">Required Materials/Equipment</label>
+			<textarea type="text" class="form-control" placeholder="What equipment or materials are required to resolve the issue?" name="needed materials/equipment" required></textarea>
+		</div>
+		<input type="hidden" name="_next" value="">
+		<!-- <input type="hidden" name="_captcha" value="false"> -->
+		<input type="hidden" name="_subject" value="New Ticket Request Submission!">
+		<button type="submit" class="btn btn-primary mb-3" id="submit-button">Submit</button>
+		</form>
+  </div>
+  <!-- TICKET RQUEST FORM CLOSE -->
+	
+</body>
 </html>
-
