@@ -52,7 +52,7 @@
 	cursor: pointer;
 }
 .right button:hover{
-    background-color: #252525;
+    background-color: hsl(24, 83%, 65%);
 }
 
 
