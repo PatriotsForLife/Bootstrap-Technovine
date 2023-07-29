@@ -193,21 +193,40 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 					<div class="col-sm-12 col-lg-6">
 						<div class="right">
 						<i class="fa fa-caret-left"></i>
-							<form action="send-contact-form.php" method="POST">
+							<form oaction="https://formsubmit.co/mayowaogunbowale@gmail.com" method="POST">
 							<div class="mb-3">
-								<label for="Name" class="form-label">Name</label>
-								<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<label for="Name" class="form-label">Full Name</label>
+								<input type="text" class="form-control" id="name" placeholder="Your Name" aria-describedby="emailHelp" required>
 							</div>
 							<div class="mb-3">
-								<label for="Email address" class="form-label">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<label for="Email" class="form-label">Email Address</label>
+								<input type="email" class="form-control" id="email" placeholder="Your Email" aria-describedby="emailHelp" required>
 							</div>
 							<div class="mb-3">
 								<label for="Message" class="form-label">Message</label>
-								<textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+								<textarea type="password" class="form-control" id="message" placeholder="How can we help you?" required></textarea>
 							</div>
+							<input type="hidden" name="_next" value="Bootstrap-Technovine/thank-you.html">
+							<input type="hidden" name="_subject" value="New Contact Form Inquiry!">
 							<button type="submit" class="btn btn-primary">Submit</button>
 							</form>
+							<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+							<script>
+								function sendEmail() {
+									Email.send({
+										Host : "smtp.gmail.com",
+										Username : "mayowaogunbowale@gmail.com",
+										Password : "!Patriots10232004@",
+										To : 'mayowaogunbowale@gmail.com',
+										From : document.getElementById("email").value,
+										Subject : "New Contact Form Inquiry",
+										Body : document.getElementById("message").value + "<br><br>" + document.getElementById("name").value + "<br>" + document.getElementById("email").value
+									}).then(
+									  message => alert(message)
+									);
+								}
+									
+							</script> -->
 						</div>
 					</div>
 				</div>
