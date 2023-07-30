@@ -27,7 +27,7 @@ body {
     min-width: 300px;
     font-family: "Montserrat", sans-serif;
     
-    background-color: #fffffe;
+    background: hsl(233, 47%, 96%);
     color: #1a1a1a;
     text-align: center;
     word-wrap: break-word;
