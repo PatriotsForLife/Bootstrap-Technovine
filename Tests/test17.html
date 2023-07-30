@@ -1,10 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
-<!--divinectorweb.com-->
 <head>
-    <meta charset="UTF-8">
-    <title>Submit Ticket | </title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thank You | </title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +14,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="./css/index.css" />
-<link rel="stylesheet" href="./css/contact.css" />
+<link rel="stylesheet" href="./css/thank-you.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <link
 	      rel="stylesheet"
@@ -47,65 +48,177 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
 	        href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
 	      >
-<link rel="icon" type="image/x-icon" href="">
+<link rel="icon" type="image/x-icon" href="/Bootstrap-/images/favicon-32x32.png">
+<link rel="stylesheet" href="./css/index.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
-	<link rel="stylesheet" href="./css/ticket-form.css">
+	<style>
+		@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+		@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+	</style>
+	<link rel="stylesheet" href="">
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/jquery-1.9.1.min.js"></script>
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
 </head>
 <body>
-  <!-- TICKET RQUEST FORM START -->
-  <div class="container mt-5 mb-5" id="container-background">
-	<h1 class="mb-4">Submit A Ticket</h1>
-	<form action="https://formsubmit.co/email@gmail.com" method="POST">
-		<div class="mb-3">
-			<label for="Name" class="form-label">Full Name</label>
-			<input type="text" class="form-control" placeholder="Your Full Name" name="name" aria-describedby="emailHelp" required>
-		</div>
-		<div class="mb-3">
-			<label for="Email" class="form-label">Email Address</label>
-			<input type="email" class="form-control" placeholder="Your Email Address" name="email" aria-describedby="emailHelp" required>
-		</div>
-		<div class="mb-3">
-			<label for="Number" class="form-label">Phone Number</label>
-			<input type="etel" class="form-control" placeholder="Your Phone Number" name="tel" aria-describedby="emailHelp" required>
-		</div>
-		<div class="mb-3">
-			<label for="Message" class="form-label">Type of Work</label>
-			<select class="form-select select-control" data-width="auto" aria-placeholder="" name="type of work" required>
-				<option selected>Select A Category</option>
-				<option class="select-control" value="1" name="type of work">CCTV / Alarm Systems</option>
-				<option class="select-control" value="2">Desktop/Laptop</option>
-				<option class="select-control" value="3">Fiber Cabling</option>
-				<option class="select-control" value="4">General Tasks</option>
-				<option class="select-control" value="5">Kiosk</option>
-				<option class="select-control" value="6">Low Voltage Cabling</option>
-				<option class="select-control" value="7">Networking</option>
-				<option class="select-control" value="8">Point of Sale (POS)</option>
-				<option class="select-control" value="9">Printer</option>
-				<option class="select-control" value="10">Pro A/V, Digital Signage</option>
-				<option class="select-control" value="11">Project management</option>
-				<option class="select-control" value="12">Server Hardware/Software</option>
-				<option class="select-control" value="13">Software Development</option>
-				<option class="select-control" value="14">Structured Cabling</option>
-				<option class="select-control" value="15">Telecom / VOIP</option>
-				<option class="select-control" value="16">Other</option>
-			  </select>
-		</div>
-		<div class="mb-3">
-			<label for="Message" class="form-label">Description of the Problem</label>
-			<textarea type="text" class="form-control" placeholder="Describe the problem clearly. (What is the problem, when the problem started, where did the problem begin, etc. )" name="problem description" required></textarea>
-		</div>
-		<div class="mb-3">
-			<label for="Message" class="form-label">Required Materials/Equipment</label>
-			<textarea type="text" class="form-control" placeholder="What equipment or materials are required to resolve the issue?" name="needed materials/equipment" required></textarea>
-		</div>
-		<input type="hidden" name="_next" value="">
-		<!-- <input type="hidden" name="_captcha" value="false"> -->
-		<input type="hidden" name="_subject" value="New Ticket Request Submission!">
-		<button type="submit" class="btn btn-primary mb-3" id="submit-button">Submit</button>
-		</form>
-  </div>
-  <!-- TICKET RQUEST FORM CLOSE -->
+	<!-- NAVIGATION BAR START -->
+<nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar-color">
+	<div class="container">
+	<a href="/Bootstrap-/index.html">
+		<img src="./assets/logo-topnav.png" alt="  logo" height="45" width="225" class="img-fluid"/>
+	</a>
+
+	<!-- TOGGLE MENU START -->
+	<button
+		title="Toggle Menu"
+		type="button"
+		class="navbar-toggler"
+		data-bs-toggle="collapse"
+		data-bs-target="#navmenu"
+	>
+		<span class="navbar-toggler-icon">
+	</button>
+	<!-- TOGGLE MENU CLOSE -->
+
+	<!-- TOGGLE MENU START -->
+	<div class="collapse navbar-collapse" id="navmenu">
+		<ul class="navbar-nav ms-auto">
+		<li class="nav-item"><a href="/Bootstrap-/index.html" class="nav-link text-white">Home</a></li>
+		<li class="nav-item"><a href="/Bootstrap-/about.html" class="nav-link text-white">About</a></li>
+		<li class="nav-item dropdown" id="dropdown">
+		  <a class="nav-link  text-white" href="/Bootstrap-/services.html" role="button"  aria-expanded="false" id="servicesDropdown">
+		  Services
+		  </a>
+		  <ul class="dropdown-menu">
+		  <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+		  <li><a class="dropdown-item" href="#">Another action</a></li> -->
+		  <!-- <li><hr class="dropdown-divider"></li> -->
+		  <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-/cctv.html">CCTV Services</a></li>
+		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/datacenter.html">Datacenter Support</a></li>
+		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/digital-signage.html">Digital Signage</a></li>
+		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/gen-support.html">General Support</a></li>
+		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/net-support.html">Network Support</a></li>
+		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/pos.html">POS Services</a></li>
+		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/telecom.html">Telecom Services</a></li>
+		  
+		  </ul>
+		</li>
+		<li class="nav-item"><a href="/Bootstrap-/contact.html" class="nav-link text-white">Contact</a></li>
+
+		<script>
+			// Get the Services dropdown link element
+			const servicesDropdown = document.getElementById('servicesDropdown');
+		  
+			// Redirect to the services page when the dropdown link is clicked
+			servicesDropdown.addEventListener('click', function(event) {
+			  event.preventDefault(); // Prevent default link behavior
+			  window.location.href = this.getAttribute('href');
+			});
+		  
+			// Add the hover effect on desktop devices
+			if (window.matchMedia('(min-width: 576px)').matches) {
+			  // When the mouse enters the dropdown link, show the dropdown menu
+			  servicesDropdown.addEventListener('mouseenter', function() {
+				this.setAttribute('aria-expanded', 'true');
+				this.nextElementSibling.classList.add('show');
+			  });
+		  
+			  // When the mouse leaves the dropdown link or the dropdown menu, hide the dropdown menu
+			  servicesDropdown.addEventListener('mouseleave', function() {
+				this.setAttribute('aria-expanded', 'false');
+				this.nextElementSibling.classList.remove('show');
+			  });
+			}
+		  </script>
+		<!-- TOGGLE MENU CLOSE -->
+	</div>
+
+</nav>
+	<!-- NAVIGATION BAR CLOSE -->
+	<!-- THANK YOU MESSAGE START -->
 	
+	<header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
+	</header>
+
+	<div class="main-content text-center">
+		<i class="fa fa-check main-content__checkmark fa-5x " id="checkmark"></i>
+		<p class="main-content__body mb-5" data-lead-id="main-content-body">Thanks a bunch for filling out this form. It means a lot to us, just like you do! We will reach out to you shortly have a nice day!</p>
+	</div>
+	<!-- THANK YOU MESSAGE CLOSE -->
+
+	<!-- FOOTER SECTION START -->
+<footer class="bg-dark text-white " id="footer">
+	<div class="container">
+	  <div class="row mb-2">
+		<div class="col-md-3 mt-5">
+		  <h4>About Us</h4>
+		  <hr />
+		  <p>We are skilled IT professionals who specialize in solving a range of problems that our clients may face in the realm of IT.
+  
+		  </p>
+		  <!-- FACEBOOK SECTION -->
+		  <a href="">
+			<i class="fa-brands fa-facebook fa-2x"></i>
+		  </a>
+  
+		  <!-- INSTAGRAM SECTION  -->
+		  <a href="">
+			<i class="fa-brands fa-instagram fa-2x"></i>
+		  
+		  
+		  </a>
+  
+		  <!-- TWITTER SECTION -->
+		  <a href="">
+			<i class="fa-brands fa-twitter fa-2x"></i>
+			
+		  <!-- LINKEDIN SECTION -->
+		  </a>
+		  <!-- <a href="#">
+			<i class="fa-brands fa-linkedin fa-2x"></i>
+		  </a> -->
+  
+		  <!-- WHATSAPP SECTION -->
+		  <!-- <a href="#">
+			<i class="fa-brands fa-whatsapp fa-2x"></i>
+		  </a> -->
+			
+		</div>
+		<div class="col-md-3 mt-5">
+		  <h4>Quick Links</h4>
+		  <hr />
+		  <ul class="navbar-nav">
+			<li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+			<li class="nav-item"><a href="/services.html" class="nav-link">Services</a> </li>
+			<li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a> </li>
+		  </ul>
+		</div>
+		
+		<div class="col-md-3 mt-5">
+		  <h4>Privacy and Terms</h4>
+		  <hr />
+		  <ul class="navbar-nav">
+			<li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Terms & Coniditions</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">API Documentation</a> </li>
+		  </ul>
+		</div>
+		<div class="col-md-3 mt-5">
+		  <h4>Contact Info</h4>
+		  <hr />
+		  <p>
+			City, State Zip <br />
+			Call Us Now 123-456-7890 <br />
+			example@email.com
+		  </p>
+		</div>
+	  </div>
+	</div>
+	<div class="bg-dark text-white text-center py-4" id="copyright">
+	  Copyright &copy; 2023 . All Rights Reserved.
+	</div>
+  </footer>
+  <!-- FOOTER SECTION CLOSE -->
 </body>
 </html>
