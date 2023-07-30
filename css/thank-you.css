@@ -12,7 +12,9 @@ html footer p {
 }
 
 @font-face {
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
     
     
 .cf:before,
@@ -35,7 +37,9 @@ html {
 body {
     padding: 0 20px;
     min-width: 300px;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
     background-color: #fffffe;
     color: #1a1a1a;
     text-align: center;
@@ -52,7 +56,9 @@ body {
 }
 .site-header__title {
     margin: 0;
-    /* font-family: Montserrat, sans-serif; */
+    font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.1;
