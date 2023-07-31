@@ -1,5 +1,9 @@
 @import "./.fonts.css";
-
+:root {
+--desktop: 1200px;
+--tablet: 768px;
+--mobile: 480px;
+}
 body {
 	background: hsl(233, 47%, 96%);
 	font-family: 'Montserrat', sans-serif;
