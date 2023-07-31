@@ -1,5 +1,12 @@
 @import "./.fonts.css";
 
+:root {
+	--desktop: 1200px;
+	--laptop: 992px;
+	--tablet: 768px;
+	--mobile: 576px;
+	}
+
 body {
 	background: hsl(233, 47%, 96%);
 	font-family: 'Montserrat', sans-serif;
@@ -41,36 +48,7 @@ h3:after {
 	font-weight: 300;
  }
 
- @media (min-width: 576px) {
-	.dropdown:hover > .dropdown-menu {
-		display: block;
-		background-color: hsl(210, 45%, 30%);
-		margin-top: 0;
-		width: 175px;
-
-		.btn {
-			color: hsl(0, 0%, 100%);
-		}
-
-		.dropdown-item:hover {
-			background-color: hsl(210, 55%, 41%);
-		}
-	}
-}
-
-
-
-@media (min-width: 576px) {
-	footer li:hover {
-		color: hsl(24, 83%, 65%);
-		transition: 0.2s;
-	}
-	
-	footer i:hover {
-		color: hsl(24, 83%, 65%);
-		transition: 0.2s;
-	}
-}
+ 
 
 #sub-header {
 	color: hsl(18, 100%, 62%);
@@ -89,6 +67,42 @@ h3:after {
 }
 
 @media (min-width: 576px) {
+	
+}
+
+footer a  i {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	color:white;
+}
+
+/* SMALL MEDIA QUERY */
+@media screen and (min-width: var(--mobile)) and (max-width: var(--tablet)) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+
 	.nav-link::after {
 		content: '';
 		opacity: 0;
@@ -104,10 +118,4 @@ h3:after {
 	.nav-link:hover::after {
 		opacity: 1;
 	}
-}
-
-footer a  i {
-	color: hsl(0, 0%, 100%);
-	text-decoration: none;
-	color:white;
 }

@@ -1,3 +1,10 @@
+:root {
+	--desktop: 1200px;
+	--laptop: 992px;
+	--tablet: 760px;
+	--mobile: 300px;
+	}
+
 #navbar-color {
 	background-color: hsl(210, 45%, 30%);
 }
@@ -50,7 +57,7 @@
 	border-color: hsl(18, 100%, 62%);
 }
 
-@media (max-width: 786px) {
+@media screen and (max-width: 576px) {
 	.carousel-inner img {
 		width: 100%;
 		height: 100%;
@@ -58,16 +65,15 @@
 	
 	.carousel-caption {
 		
-		top: 50%;
+		top: 20%;
 		
 		
 	}
 	
 	.carousel-caption h1 {
-		
-		
+		padding-top: 15px;
 	}
-	}
+	
 	.carousel-caption h4 {
 		padding-bottom: .2rem;
 		
@@ -76,5 +82,36 @@
 	.carousel-caption .btn {
 		font-size: 95%;
 		padding: 8px 14px;
+	}
+}
+@media screen and (min-width: var(--mobile)) and (max-width: var(--tablet)) {
+	.carousel-inner img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.carousel-caption {
+		
+		top: 10%;
+		
+		
+	}
+	
+	.carousel-caption h1 {
+		padding-top: 10px;
+		
+		
+		
+	}
+	
+	.carousel-caption h4 {
+		padding-bottom: .5rem;
+		
+		
+	}
+	.carousel-caption .btn {
+		font-size: 95%;
+		padding: 8px 14px;
+		
 	}
 }

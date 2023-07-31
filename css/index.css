@@ -1,8 +1,10 @@
 @import "./.fonts.css";
+
 :root {
 --desktop: 1200px;
+--laptop: 992px;
 --tablet: 768px;
---mobile: 480px;
+--mobile: 576px;
 }
 body {
 	background: hsl(233, 47%, 96%);
@@ -77,36 +79,7 @@ footer a  i {
 	object-fit: cover;
 }
 
-@media (min-width: 576px) {
-	.dropdown:hover > .dropdown-menu {
-		display: block;
-		background-color: hsl(210, 45%, 30%);
-		margin-top: 0;
-		width: 175px;
 
-		.btn {
-			color: hsl(0, 0%, 100%);
-		}
-
-		.dropdown-item:hover {
-			background-color: hsl(210, 55%, 41%);
-		}
-	}
-}
-
-
-
-@media (min-width: 576px) {
-	footer li:hover {
-		color: hsl(24, 83%, 65%);
-		transition: 0.2s;
-	}
-	
-	footer i:hover {
-		color: hsl(24, 83%, 65%);
-		transition: 0.2s;
-	}
-}
 
 /* #navmenu li{
 	background:hsl(210, 45%, 30%);
@@ -157,8 +130,11 @@ footer a  i {
 	position: relative;
 }
 
-
-@media (min-width: 576px) {
+#services-link {
+	color: hsl(18, 100%, 62%);
+}
+/*A EXTRA SMALL MEDIA QUERY */
+@media screen {
 	.nav-link::after {
 		content: '';
 		opacity: 0;
@@ -174,10 +150,201 @@ footer a  i {
 	.nav-link:hover::after {
 		opacity: 1;
 	}
-}
 
-@media screen and (min-width: 900px) {
-	.carousel-inner{
-	 
-	 }
-   }
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+/* SMALL MEDIA QUERY */
+@media screen and (min-width: var(--mobile)) {
+	.nav-link::after {
+		content: '';
+		opacity: 0;
+		transition: all 0.2s;
+		height: 2px;
+		width: 100%;
+		background: hsl(18, 100%, 62%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.nav-link:hover::after {
+		opacity: 1;
+	}
+
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+/* MEDIUM MEDIA QUERY */
+@media screen and (min-width: var(--tablet)) {
+	.nav-link::after {
+		content: '';
+		opacity: 0;
+		transition: all 0.2s;
+		height: 2px;
+		width: 100%;
+		background: hsl(18, 100%, 62%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.nav-link:hover::after {
+		opacity: 1;
+	}
+
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+/* LARGE MEDIA QUERY */
+@media screen and (min-width: var(--laptop)) {
+	.nav-link::after {
+		content: '';
+		opacity: 0;
+		transition: all 0.2s;
+		height: 2px;
+		width: 100%;
+		background: hsl(18, 100%, 62%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.nav-link:hover::after {
+		opacity: 1;
+	}
+
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+/* EXTRA LARGE MEDIA QUERY */
+@media screen and (min-width: var(--desktop)) {
+	.nav-link::after {
+		content: '';
+		opacity: 0;
+		transition: all 0.2s;
+		height: 2px;
+		width: 100%;
+		background: hsl(18, 100%, 62%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.nav-link:hover::after {
+		opacity: 1;
+	}
+
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
