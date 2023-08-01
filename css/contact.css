@@ -3,6 +3,10 @@
 /* body {
 	background: #e8e8e8;
 } */
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+}
+
 .form-area {
 	padding-top: 7%;
 }

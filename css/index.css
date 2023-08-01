@@ -121,8 +121,8 @@ footer a  i {
 }
 
 
-.dropdown-menu show {
-	background-color: hsl(210, 45%, 30%);
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
 }
 
 /* .dropdown-menu:hover {

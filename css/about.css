@@ -34,6 +34,10 @@ body {
 	display: block;
 }
 
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+}
+
 h3:after {
 	background: none repeat scroll 0 0 hsl(210, 55%, 41%);
 	bottom: -10px;
