@@ -82,7 +82,7 @@ footer a  i {
 }
 
 /* SMALL MEDIA QUERY */
-@media screen and (min-width: var(--mobile)) and (max-width: var(--tablet)) {
+/* @media screen and (min-width: var(--mobile)) and (max-width: var(--tablet)) { */
 	.dropdown:hover > .dropdown-menu {
 		display: block;
 		background-color: hsl(210, 45%, 30%);
