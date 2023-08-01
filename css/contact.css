@@ -3,6 +3,11 @@
 /* body {
 	background: #e8e8e8;
 } */
+.dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
 .dropdown-item:hover {
 	background-color: hsl(210, 55%, 41%);
 }

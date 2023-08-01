@@ -32,6 +32,7 @@ body {
 }
 .dropdown:hover .dropdown-menu {
 	display: block;
+	background-color: hsl(210, 45%, 30%);
 }
 
 .dropdown-item:hover {
