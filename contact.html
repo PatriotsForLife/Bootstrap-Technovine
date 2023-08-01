@@ -140,14 +140,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 						<div class="text-center me-5 pe-5">
 							<div class="text-center me-5 pe-5">
 								<div class="text-center pe-5 me-5">
-									<button 
+									<a href="/Bootstrap-Technovine/ticket-form.html" >
+              <button type="button"
               class="btn btn-primary px-4 py-2 fs-5 mt-5" 
-              id="button"
+              id="submit-ticket_01"
             >
               Submit&nbsp;a&nbsp;Ticket
-              <a href="/Bootstrap-Technovine/ticket-form.html" class="stretched-link"></a>
+              
 
             </button>
+            </a>
 								  </div>
 							  </div>
 						  </div>
@@ -201,22 +203,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 						<div class="right">
 						<i class="fa fa-caret-left"></i>
 							<form action="https://formsubmit.co/el/kenigo" method="POST">
-							<div class="mb-3">
-								<label for="Name" class="form-label">Full Name</label>
-								<input type="text" class="form-control" placeholder="Your Full Name" name="name" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="Email" class="form-label">Email Address</label>
-								<input type="email" class="form-control" placeholder="Your Email Address" name="email" aria-describedby="emailHelp" required>
-							</div>
-							<div class="mb-3">
-								<label for="Message" class="form-label">Message</label>
-								<textarea type="text" class="form-control" placeholder="How can we help you?" name="message" required></textarea>
-							</div>
-							<input type="hidden" name="_next" value="https://patriotsforlife.github.io/Bootstrap-Technovine/thank-you.html">
-							<input type="hidden" name="_subject" value="New Contact Form Inquiry!">
-							<input type="hidden" name="_captcha" value="false">
-							<button type="submit" class="btn btn-primary">Submit</button>
+								<input type="hidden" name="_next" value="https://patriotsforlife.github.io/Bootstrap-Technovine/thank-you.html">
+								<input type="hidden" name="_subject" value="New Contact Form Inquiry!">
+								<input type="hidden" name="_captcha" value="false">
+								<div class="mb-3">
+									<label for="Name" class="form-label">Full Name</label>
+									<input type="text" class="form-control" placeholder="Your Full Name" name="name" aria-describedby="emailHelp" required>
+								</div>
+								<div class="mb-3">
+									<label for="Email" class="form-label">Email Address</label>
+									<input type="email" class="form-control" placeholder="Your Email Address" name="email" aria-describedby="emailHelp" required>
+								</div>
+								<div class="mb-3">
+									<label for="Message" class="form-label">Message</label>
+									<textarea type="text" class="form-control" placeholder="How can we help you?" name="message" required></textarea>
+								</div>
+								
+								<button type="submit" class="btn btn-primary">Submit</button>
 							</form>
 							<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 							<script>
@@ -224,7 +227,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 									Email.send({
 										Host : "smtp.gmail.com",
 										Username : "mayowaogunbowale@gmail.com",
-										Password : "!Patriots10232004@",
+										Password : "",
 										To : 'mayowaogunbowale@gmail.com',
 										From : document.getElementById("email").value,
 										Subject : "New Contact Form Inquiry",
