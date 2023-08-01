@@ -121,6 +121,14 @@ footer a  i {
 }
 
 
+.dropdown-menu show {
+	background-color: hsl(210, 45%, 30%);
+}
+
+/* .dropdown-menu:hover {
+	background-color: hsl(210, 45%, 30%);
+} */
+
 
 /* #navmenu li{
 	background:hsl(210, 45%, 30%);
