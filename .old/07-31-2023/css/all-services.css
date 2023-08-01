@@ -1,0 +1,160 @@
+@import "./.fonts.css";
+
+body {
+	background: hsl(233, 47%, 96%);
+	/* font-family: 'Montserrat', sans-serif; */
+}
+
+footer a {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+}
+
+footer a  i {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	color:white;
+}
+
+#footer {
+	color: hsl(0, 0%, 100%);
+}
+
+#copyright {
+	border-top: 1px solid hsl(0, 0%, 20%) ;
+}
+
+.c-item {
+	height: 900px;
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+}
+
+#crd {
+	background: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 576px) {
+	h3:after {
+		background: none repeat scroll 0 0 hsl(210, 55%, 41%);
+		bottom: -10px;
+		content: "";
+		display: block;
+		height: 2px;
+		position: relative;
+		width: 100px;
+	 }
+}
+
+h3 {
+	font-weight: 300;
+ }
+
+@media (min-width: 576px) {
+	#long:after {
+		background: none repeat scroll 0 0 hsl(210, 55%, 41%);
+		bottom: -10px;
+		content: "";
+		display: block;
+		height: 2px;
+		position: relative;
+		width: 150px;
+	 }
+}
+
+#sub-header {
+	color: hsl(24, 83%, 65%);
+}
+
+@media (min-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		background-color: hsl(210, 45%, 30%);
+		margin-top: 0;
+		width: 175px;
+
+		.btn {
+			color: hsl(0, 0%, 100%);
+		}
+
+		.dropdown-item:hover {
+			background-color: hsl(210, 55%, 41%);
+		}
+	}
+}
+
+
+
+@media (min-width: 576px) {
+	footer li:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+	
+	footer i:hover {
+		color: hsl(24, 83%, 65%);
+		transition: 0.2s;
+	}
+}
+
+
+
+#sub-header {
+	color: hsl(18, 100%, 62%);
+}
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid white;
+}
+
+#button {
+	background-color:hsl(18, 100%, 62%);
+	border-color: hsl(18, 100%, 62%);
+}
+
+.nav-link {
+	position: relative;
+}
+
+
+@media (min-width: 576px) {
+	.nav-link::after {
+		content: '';
+		opacity: 0;
+		transition: all 0.2s;
+		height: 2px;
+		width: 100%;
+		background: hsl(18, 100%, 62%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.nav-link:hover::after {
+		opacity: 1;
+	}
+}
