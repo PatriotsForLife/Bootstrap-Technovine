@@ -2,9 +2,9 @@
 
 :root {
 --desktop: 1200px;
---laptop: 992px;
---tablet: 768px;
---mobile: 576px;
+--laptop: 900px;
+--tablet: 720px;
+--mobile: 300px;
 }
 body {
 	background: hsl(233, 47%, 96%);
@@ -81,16 +81,6 @@ footer a  i {
 
 
 
-/* #navmenu li{
-	background:hsl(210, 45%, 30%);
-	transition: all;
-}
-
-#navmenu li:hover {
-	background: hsl(210, 55%, 41%);
-	transition: 0.5s;
-} */
-
 #sub-header {
 	color: hsl(18, 100%, 62%);
 }
@@ -130,6 +120,17 @@ footer a  i {
 	position: relative;
 }
 
+
+
+/* #navmenu li{
+	background:hsl(210, 45%, 30%);
+	transition: all;
+}
+
+#navmenu li:hover {
+	background: hsl(210, 55%, 41%);
+	transition: 0.5s;
+} */
 
 @media (min-width: 576px) {
 	.nav-link::after {
