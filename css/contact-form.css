@@ -3,6 +3,10 @@
 body {
 	background: hsl(233, 47%, 96%);
 }
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+}
+
 .form-area {
 	padding-top: 7%;
 }
