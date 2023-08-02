@@ -1,3 +1,6 @@
+@import "../fonts.css";
+@import "./variables.scss";
+
 body {
 	background: hsl(233, 47%, 96%);
 	font-family: 'Montserrat', sans-serif;
@@ -107,4 +110,21 @@ body {
 //★ Media Queries
 
 //▸ Desktop
-// @media screen and ()
+@media screen and (min-width: $desktop-min) {
+
+}
+
+//▸ laptop
+@media screen and (min-width: $laptop-min) and (max-width: $laptop-max) {
+
+}
+
+//▸ Tablet
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+}
+
+//▸ Mobile
+@media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+
+}
