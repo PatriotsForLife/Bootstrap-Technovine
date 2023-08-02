@@ -1,0 +1,31 @@
+// Importing fonts from a separate CSS file
+@import "./.fonts.css";
+
+.form-control {
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+.select-control {
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+#submit-button {
+  border: none;
+  border-radius: 0;
+  background: hsl(18, 100%, 62%);
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(18, 100%, 62%);
+  }
+}
+
+// #container-background {
+//   background-color: hsl(0, 0%, 100%);
+// }
