@@ -145,7 +145,7 @@ footer a  i {
 	transition: 0.5s;
 } */
 
-@media (min-width: 576px) {
+@media (min-width: 300px) {
 	.nav-link::after {
 		content: '';
 		opacity: 0;
