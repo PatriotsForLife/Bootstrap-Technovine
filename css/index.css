@@ -116,7 +116,7 @@ footer a  i {
 	border-color: hsl(18, 100%, 62%);
 }
 
-.nav-link {
+#nav_object {
 	position: relative;
 }
 
@@ -145,8 +145,8 @@ footer a  i {
 	transition: 0.5s;
 } */
 
-@media (min-width: 300px) {
-	.nav-link::after {
+
+	#nav_object::after {
 		content: '';
 		opacity: 0;
 		transition: all 0.2s;
@@ -158,13 +158,15 @@ footer a  i {
 		left: 0;
 	}
 	
-	.nav-link:hover::after {
+	#nav_object:hover::after {
 		opacity: 1;
 	}
-}
 
-@media screen and (min-width: 900px) {
-	.carousel-inner{
-	 
-	 }
-   }
+@media screen and (max-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+}
+	
+}
