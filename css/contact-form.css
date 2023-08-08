@@ -14,41 +14,41 @@ body {
 
 .form-area {
 	padding-top: 7%;
-}
-.row.single-form {
+  }
+  .row.single-form {
 	box-shadow: 0 2px 20px -5px hsla(0, 0%, 0%, 0.5);
-}
-.left {
+  }
+  .left {
 	background: hsl(210, 45%, 30%);
 	padding: 200px 98px;
-}
-.left h2 {
-	font-family: 'Montserrat', sans-serif;
+  }
+  .left h2 {
+	font-family: "Montserrat", sans-serif;
 	color: hsl(0, 0%, 100%);
 	font-weight: 700;
 	font-size: 48px;
-}
-.left h2 span {
+  }
+  .left h2 span {
 	font-weight: 100;
-}
-.single-form{
-    background: hsl(0, 0%, 100%);
-}
-.right {
+  }
+  .single-form {
+	background: hsl(0, 0%, 100%);
+  }
+  .right {
 	padding: 70px 100px;
 	position: relative;
-}
-.right i {
+  }
+  .right i {
 	position: absolute;
 	font-size: 80px;
 	left: -27px;
 	top: 40%;
 	color: hsl(0, 0%, 100%);
-}
-.form-control {
+  }
+  .form-control {
 	border: 2px solid hsl(0, 0%, 0%);
-}
-.right button {
+  }
+  .right button {
 	border: none;
 	border-radius: 0;
 	background: hsl(18, 100%, 62%);
@@ -59,49 +59,47 @@ body {
 	font-size: 16px;
 	margin-top: 20px;
 	cursor: pointer;
-}
-.right button:hover{
-    background-color: hsl(18, 100%, 62%);
-}
-
-
-/*responsive*/
-
-@media (min-width:768px) and (max-width:991px){
-    .right i {
-	top: -52px;
-	transform: rotate(90deg);
-	left: 50%;
-}
-}
-
-@media (max-width:767px){
-    .left {
-  padding: 90px 15px;
-  text-align: center;
-}
-.left h2 {
-  font-size: 25px;
-}
-.right {
-  padding: 25px;
-}
-.right i {
-  top: -52px;
-  transform: rotate(90deg);
-  left: 46%;
-}
-    .right button {
-	width: 150px;
-	padding: 12px 0;
-}
-    
-}
-
-#info {
+  }
+  .right button:hover {
+	background-color: hsl(18, 100%, 62%);
+  }
+  
+  /*responsive*/
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+	.right i {
+	  top: -50px; /* THIS LINE WAS CHANGED */
+	  transform: rotate(90deg);
+	  left: 50%;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.left {
+	  padding: 90px 15px;
+	  text-align: center;
+	}
+	.left h2 {
+	  font-size: 25px;
+	}
+	.right {
+	  padding: 25px;
+	}
+	.right i {
+	  top: -50px; /* THIS LINE WAS CHANGED */
+	  transform: rotate(90deg);
+	  left: 46%;
+	}
+	.right button {
+	  width: 150px;
+	  padding: 12px 0;
+	}
+  }
+  
+  #info {
 	display: flex;
 	vertical-align: middle;
-}
+  }
 
 .navbar-light .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
