@@ -150,6 +150,43 @@ footer a  i {
 	position: relative;
 }
 
+/* .carousel-inner img {
+	width: 100%;
+	height: 100%;
+	filter: brightness(0.6);
+}
+
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+.carousel-caption h1 {
+	font-size: 500%;
+	transform: uppercase;
+	text-shadow: 1px 1px 15px hsl(0, 0%, 0%);
+	
+}
+
+.carousel-caption h4 {
+	font-size: 200%;
+	font-weight: 500;
+	padding-bottom: 1rem;
+	text-shadow: 1px 1px 10px hsl(0, 0%, 0%);
+	
+} */
+
+/* #button {
+	background-color:hsl(18, 100%, 62%);
+	border: 1px solid hsl(18, 100%, 62%);
+}
+
+#button:hover {
+	background-color:hsl(24, 83%, 65%);
+	border: 1px solid hsl(24, 83%, 65%);
+} */
 
 @media (min-width: 576px) {
 	.nav-link::after {

@@ -1,8 +1,11 @@
 :root {
-	--desktop: 1200px;
-	--laptop: 992px;
-	--tablet: 760px;
-	--mobile: 300px;
+	--desktop-min: 1200px;
+	--laptop-min: 900px;
+	--laptop-max: calc(var(--desktop-min) - 1px);
+	--tablet-min: 720px;
+	--tablet-max: calc(var(--laptop-min) - 1px);
+	--mobile-min: 300px;
+	--mobile-max: calc(var(--tablet-min) - 1px);
 	}
 
 #navbar-color {
@@ -22,6 +25,7 @@
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
+	filter: brightness(0.6);
 }
 
 .carousel-caption {
@@ -32,13 +36,17 @@
 }
 
 .carousel-caption h1 {
-	
+	font-size: 500%;
+	transform: uppercase;
+	text-shadow: 1px 1px 15px hsl(0, 0%, 0%);
 	
 }
-}
+
 .carousel-caption h4 {
+	font-size: 200%;
+	font-weight: 500;
 	padding-bottom: 1rem;
-	
+	text-shadow: 1px 1px 10px hsl(0, 0%, 0%);
 	
 }
 
@@ -52,22 +60,22 @@
 	border-color: 1px solid hsl(18, 100%, 62%);
 } */
 
+
 #button {
 	background-color:hsl(18, 100%, 62%);
-	border-color: hsl(18, 100%, 62%);
+	border: 1px solid hsl(18, 100%, 62%);
 }
 
-@media screen and (max-width: 576px) {
-	.carousel-inner img {
-		width: 100%;
-		height: 100%;
-	}
+#button:hover {
+	background-color:hsl(24, 83%, 65%);
+	border: 1px solid hsl(24, 83%, 65%);
+}
+
+@media screen and (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+	
 	
 	.carousel-caption {
-		
-		top: 20%;
-		
-		
+		top: 50%;
 	}
 	
 	.carousel-caption h1 {
@@ -75,29 +83,24 @@
 	}
 	
 	.carousel-caption h4 {
+		font-size: 140%;
+		font-weight: 400;
 		padding-bottom: .2rem;
 		
 		
 	}
-	.carousel-caption .btn {
+	#button {
 		font-size: 95%;
 		padding: 8px 14px;
 	}
 }
-@media screen and (min-width: var(--mobile)) and (max-width: var(--tablet)) {
-	.carousel-inner img {
-		width: 100%;
-		height: 100%;
-	}
-	
+@media screen and (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
 	.carousel-caption {
-		
-		top: 10%;
-		
-		
+		top: 50%;
 	}
 	
 	.carousel-caption h1 {
+		font-size: 350%;
 		padding-top: 10px;
 		
 		
@@ -105,7 +108,7 @@
 	}
 	
 	.carousel-caption h4 {
-		padding-bottom: .5rem;
+		padding-bottom: .1rem;
 		
 		
 	}
@@ -113,5 +116,34 @@
 		font-size: 95%;
 		padding: 8px 14px;
 		
+	}
+}
+
+@media screen and (min-width: var(--mobile-min)) and (max-width: var(--mobile-max)) {
+	.carousel-caption {
+		top: 40%;
+	}
+	
+	.carousel-caption h1 {
+		font-size: 250%;
+		padding-top: 10px;
+		
+		
+		
+	}
+	
+	.carousel-caption h4 {
+		font-size: 110%;
+		
+		
+	}
+	.carousel-caption .btn {
+		font-size: 90%;
+		padding: 4px 8px;
+		
+	}
+
+	.carousel-indicators {
+		display: none;
 	}
 }
