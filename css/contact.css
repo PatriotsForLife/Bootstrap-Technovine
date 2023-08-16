@@ -116,6 +116,6 @@
 	border-color: hsl(18, 100%, 62%);
 }
 
-.nav-link {
+#nav_object {
 	position: relative;
 }

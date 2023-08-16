@@ -118,13 +118,13 @@ hr {
     border-color: hsl(18, 100%, 62%);
 }
 
-.nav-link {
+#nav_object {
     position: relative;
 }
 
 
 @media (min-width: 576px) {
-    .nav-link::after {
+    #nav_object::after {
         content: '';
         opacity: 0;
         transition: all 0.2s;
@@ -136,7 +136,7 @@ hr {
         left: 0;
     }
     
-    .nav-link:hover::after {
+    #nav_object:hover::after {
         opacity: 1;
     }
 }

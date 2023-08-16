@@ -161,7 +161,7 @@ h3 {
 
 
 @media (min-width: 576px) {
-	.nav-link::after {
+	#nav_object::after {
 		content: '';
 		opacity: 0;
 		transition: all 0.2s;
@@ -173,7 +173,7 @@ h3 {
 		left: 0;
 	}
 	
-	.nav-link:hover::after {
+	#nav_object:hover::after {
 		opacity: 1;
 	}
 }

@@ -68,6 +68,7 @@ footer li:hover {
 	color: hsl(24, 83%, 65%);
 	transition: 0.2s;
   }
+  
 
 #footer {
   color: hsl(0, 0%, 100%);
@@ -143,12 +144,12 @@ footer li:hover {
 	background-color: hsl(210, 55%, 41%);
 }
 
-.nav-link {
+#nav_object {
 	position: relative;
 }
 
 @media (min-width: 576px) {
-	.nav-link::after {
+	#nav_object::after {
 		content: '';
 		opacity: 0;
 		transition: all 0.2s;
@@ -160,7 +161,7 @@ footer li:hover {
 		left: 0;
 	}
 	
-	.nav-link:hover::after {
+	#nav_object:hover::after {
 		opacity: 1;
 	}
 }

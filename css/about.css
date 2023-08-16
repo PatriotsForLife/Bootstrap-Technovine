@@ -131,14 +131,14 @@ footer i:hover {
 
 
 }
-.nav-link {
+#nav_object {
   position: relative;
 }
-.nav-link:hover {
+#nav_object:hover {
   /* text-decoration: underline; */
   /* border-bottom: 2px solid  hsl(18, 100%, 62%); */
 }
-.nav-link::after {
+#nav_object::after {
   content: '';
   opacity: 0;
   transition: all 0.2s;
@@ -149,7 +149,7 @@ footer i:hover {
   bottom: 0;
   left: 0;
 }
-.nav-link:hover::after {
+#nav_object:hover::after {
   opacity: 1;
 }
 .nav-item a {
@@ -157,7 +157,7 @@ footer i:hover {
 }
 
 @media (min-width: 300px) {
-	.nav-link::after {
+	#nav_object::after {
 		content: '';
 		opacity: 0;
 		transition: all 0.2s;
@@ -169,7 +169,7 @@ footer i:hover {
 		left: 0;
 	}
 	
-	.nav-link:hover::after {
+	#nav_object:hover::after {
 		opacity: 1;
 	}
 }
