@@ -63,7 +63,27 @@ body {
   .right button:hover {
 	background-color: hsl(18, 100%, 62%);
   }
-  
+  #nav_object {
+	position: relative;
+}
+
+#nav_object::after {
+	content: '';
+	opacity: 0;
+	transition: all 0.2s;
+	height: 2px;
+	width: 100%;
+	background: hsl(18, 100%, 62%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#nav_object:hover::after {
+	opacity: 1;
+}
+
+
   /*responsive*/
   
   @media (min-width: 768px) and (max-width: 991px) {

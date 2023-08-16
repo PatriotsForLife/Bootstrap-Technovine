@@ -1,9 +1,4 @@
-#error-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10%;
-}
+
 
 #footer {
   position: absolute;

@@ -129,7 +129,9 @@ footer i:hover {
         }
     } */
 
-
+    footer a {
+      text-decoration: none;
+  }
 }
 #nav_object {
   position: relative;
