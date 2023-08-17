@@ -29,7 +29,7 @@
 .carousel-caption p {
 	font-size: 100%;
 	color: hsl(18, 100%, 62%);
-	padding-right: 430px;
+	padding-right: 640px;
 	transform: uppercase;
 	text-shadow: ;
 	
@@ -45,7 +45,7 @@
 }
 
 .button {
-	padding-right: 95px;
+	padding-right: 100px;
 }
 
 #button {
@@ -70,7 +70,7 @@
 	
 	.carousel-caption p {
 		color: hsl(18, 100%, 62%);
-		padding-right: 400px;
+		
 		transform: uppercase;
 		text-shadow: ;
 		
@@ -98,7 +98,7 @@
 	
 	.carousel-caption p {
 		color: hsl(18, 100%, 62%);
-		padding-right: 390px;
+		padding-left: 800px;
 		transform: uppercase;
 		text-shadow: ;
 		

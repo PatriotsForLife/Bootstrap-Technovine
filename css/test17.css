@@ -122,6 +122,8 @@
 @media screen and (min-width: var(--mobile-min)) and (max-width: var(--mobile-max)) {
 	.carousel-caption {
 		top: 40%;
+		position: none !important;
+	
 		
 		
 	}
