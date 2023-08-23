@@ -1,98 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!--divinectorweb.com-->
-<head>
-    <meta charset="UTF-8">
-    <title>Datacenter Support | Technovine Solutions</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<title>Datacenters | Technovine Solutions</title>
+
+<!-- <meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." /> -->
+
+<!-- <link rel="stylesheet" href="/_bridgetown/static/css/main.c7d4dd3f1984a290e9be.css" /> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- <link rel="stylesheet" href="/css/index.css" /> -->
+<link rel="stylesheet" href="./css/all-services.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="/Bootstrap-Technovine/images/favicon-32x32.png">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/all-services.css">
-	<link rel="icon" type="image/x-icon" href="/Bootstrap-Technovine/images/favicon-32x32.png">
-</head>
-<body>
-	<!-- NAVIGATION BAR START -->
-<nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar-color">
-	<div class="container">
-	<a href="/Bootstrap-Technovine/index.html">
-		<img src="./src/img/logo-topnav.png" alt=" Technovine Solutions logo" height="45" width="225" class="img-fluid"/>
-	</a>
+<!-- <script src="/_bridgetown/static/js/main.96ffffaea92690057bfb.js" defer></script> -->
+  </head>
+  <body>
+		<!-- NAVIGATION BAR START -->
+	<nav class="navbar navbar-expand-lg navbar-light  py-3 sticky-top" id="navbar-color">
+		<div class="container">
+		<a href="/Bootstrap-Technovine/index.html">
+			<img src="./src/img/logo-topnav.png"  height="45" width="225" class="img-fluid"/>
+		</a>
 
-	<!-- TOGGLE MENU START -->
-	<button
-		title="Toggle Menu"
-		type="button"
-		class="navbar-toggler"
-		data-bs-toggle="collapse"
-		data-bs-target="#navmenu"
-	>
-		<span class="navbar-toggler-icon">
-	</button>
-	<!-- TOGGLE MENU CLOSE -->
-
-	<!-- TOGGLE MENU START -->
-	<div class="collapse navbar-collapse" id="navmenu">
-		<ul class="navbar-nav ms-auto">
-		<li class="nav-item"><a href="/Bootstrap-Technovine/index.html" class="nav-link text-white" id="nav_object">Home</a></li>
-		<li class="nav-item"><a href="/Bootstrap-Technovine/about.html" class="nav-link text-white" id="nav_object">About</a></li>
-		<li class="nav-item dropdown" id="dropdown">
-		  <a class="nav-link text-white" href="/Bootstrap-Technovine/services.html" role="button"  aria-expanded="false" id="nav_object">
-		  Services
-		  </a>
-		  <ul class="dropdown-menu">
-		  <!-- <li><a class="dropdown-item" href="#">Action</a></li>
-		  <li><a class="dropdown-item" href="#">Another action</a></li> -->
-		  <!-- <li><hr class="dropdown-divider"></li> -->
-		  <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-Technovine/cctv.html">CCTV Services</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/datacenter.html">Datacenter Support</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/digital-signage.html">Digital Signage</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/gen-support.html">General Support</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/net-support.html">Network Support</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/pos.html">POS Services</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/telecom.html">Telecom Services</a></li>
-		  
-		  </ul>
-		</li>
-		<li class="nav-item"><a href="/Bootstrap-Technovine/contact.html" class="nav-link text-white" id="nav_object">Contact</a></li>
-		<script>
-			// Get the Services dropdown link element
-			const servicesDropdown = document.getElementById('servicesDropdown');
-		  
-			// Redirect to the services page when the dropdown link is clicked
-			servicesDropdown.addEventListener('click', function(event) {
-			  event.preventDefault(); // Prevent default link behavior
-			  window.location.href = this.getAttribute('href');
-			});
-		  
-			// Add the hover effect on desktop devices
-			if (window.matchMedia('(min-width: 576px)').matches) {
-			  // When the mouse enters the dropdown link, show the dropdown menu
-			  servicesDropdown.addEventListener('mouseenter', function() {
-				this.setAttribute('aria-expanded', 'true');
-				this.nextElementSibling.classList.add('show');
-			  });
-		  
-			  // When the mouse leaves the dropdown link or the dropdown menu, hide the dropdown menu
-			  servicesDropdown.addEventListener('mouseleave', function() {
-				this.setAttribute('aria-expanded', 'false');
-				this.nextElementSibling.classList.remove('show');
-			  });
-			}
-		  </script>
+		<!-- TOGGLE MENU START -->
+		<button
+			title="Toggle Menu"
+			type="button"
+			class="navbar-toggler"
+			data-bs-toggle="collapse"
+			data-bs-target="#navmenu"
+		>
+			<span class="navbar-toggler-icon">
+		</button>
 		<!-- TOGGLE MENU CLOSE -->
-	</div>
 
-</nav>
-	<!-- NAVIGATION BAR CLOSE -->
-	<!-- SHOWCASE START -->
+		<!-- TOGGLE MENU START -->
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="/Bootstrap-Technovine/index.html" class="nav-link text-white" id="nav_object">Home</a></li>
+        <li class="nav-item"><a href="/Bootstrap-Technovine/about.html" class="nav-link text-white" id="nav_object">About</a></li>
+        <li class="nav-item dropdown" id="dropdown">
+          <a class="nav-link text-white" href="/Bootstrap-Technovine/services.html" role="button"  aria-expanded="false" id="nav_object">
+          Services
+          </a>
+			  <ul class="dropdown-menu">
+			  <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+			  <li><a class="dropdown-item" href="#">Another action</a></li> -->
+			  <!-- <li><hr class="dropdown-divider"></li> -->
+			  <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-Technovine/cctv.html">CCTV Services</a></li>
+			  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/datacenter.html">Datacenter Support</a></li>
+			  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/digital-signage.html">Digital Signage</a></li>
+			  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/gen-support.html">General Support</a></li>
+			  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/net-support.html">Network Support</a></li>
+			  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/pos.html">POS Services</a></li>
+			  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/telecom.html">Telecom Services</a></li>
+			  
+			  </ul>
+			</li>
+			<li class="nav-item"><a href="/Bootstrap-Technovine/contact.html" class="nav-link text-white" id="nav_object">Contact</a></li>
+
+			<script>
+				// Get the Services dropdown link element
+				const servicesDropdown = document.getElementById('servicesDropdown');
+			  
+				// Redirect to the services page when the dropdown link is clicked
+				servicesDropdown.addEventListener('click', function(event) {
+				  event.preventDefault(); // Prevent default link behavior
+				  window.location.href = this.getAttribute('href');
+				});
+			  
+				// Add the hover effect on desktop devices
+				if (window.matchMedia('(min-width: 576px)').matches) {
+				  // When the mouse enters the dropdown link, show the dropdown menu
+				  servicesDropdown.addEventListener('mouseenter', function() {
+					this.setAttribute('aria-expanded', 'true');
+					this.nextElementSibling.classList.add('show');
+				  });
+			  
+				  // When the mouse leaves the dropdown link or the dropdown menu, hide the dropdown menu
+				  servicesDropdown.addEventListener('mouseleave', function() {
+					this.setAttribute('aria-expanded', 'false');
+					this.nextElementSibling.classList.remove('show');
+				  });
+				}
+			  </script>
+			<!-- TOGGLE MENU CLOSE -->
+		</div>
+
+	</nav>
+		<!-- NAVIGATION BAR CLOSE -->
+		<!-- SHOWCASE START -->
 <section>
 	<div id="herocarousel" class="carousel slide" data-bs-ride="carousel" >
 		  <div class="carousel-inner">
@@ -110,104 +114,112 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	</div>
   </section>
   <!-- SHOWCASE CLOSE -->
-<!-- DATACENTER SUPPORT SECTION START -->
-<section>
-	<div class="container text-left mt-5">
-		<div class="row">
-		  <div class="col-md col-12 order-1 order-md-0">
-			<h3 class="display-3 text-start" id="long">Datacenter Support</h3>
-			  <br>
-			  <p>
-				<b>Datacenters</b> are the foundation of many modern businesses, providing the infrastructure and resources necessary to save, process, and dispense data. They produce an off-premises location to secure and back up your business's data
+	
+	
+		<!-- DATACENTER SECTION  START -->
+	<section>
+		<div class="container text-start mt-3">
+			<div class="row">
+				<div class="col-md col-12 order-1 order-md-0">
+				<h3 class="display-3 text-start" id="about" pt-5>Datacenters</h3>
+				<br>
+				<!-- <br> -->
+				<p class="text-start">
+					<b>Datacenters</b> are the foundation of many modern businesses, providing the infrastructure and resources necessary to save, process, and dispense data. They produce an off-premises location to secure and back up your business's data
 				<br />
 				<br />
 				This is why having professional Datacenter Support that is quick and reputable is essential to every company that takes its data seriously. Datacenter Support is the monitoring and upkeep of a datacenter's equipment and systems. A Datacenter that is not working at an optimal level can lead to the loss of data, damaged files, and even the destruction of equipment. So do not entrust your data to the hands of amateurs get the expert support needed to keep your datacenter secure and running smoothly.
+				</p>
 				<br />
-				<div class="d-grid gap-2 col-6 mx-auto mb-4">
-					<button class="btn btn-primary" type="button" id="button">Submit&nbsp;a&nbsp;Ticket</button>
-				  </div>
-			  </p>
-		  </div>
-		  <div class="col">
-			<div class="col">
-				<img src="./src/img/datacenter-002 - Copy.jpeg" class="img-fluid rounded float-start mb-3" alt="datacenter">
-			  </div>
-		  </div>
-</section>
-<!-- DATACENTER SUPPORT SECTION CLOSE -->
-<!-- FOOTER SECTION START -->
-<footer class="bg-dark text-white " id="footer">
-	<div class="container">
-	  <div class="row mb-2">
-		<div class="col-md-3 mt-5">
-		  <h4>About Us</h4>
-		  <hr />
-		  <p>We are skilled IT professionals who specialize in solving a range of problems that our clients may face in the realm of IT.
-  
-		  </p>
-		  <!-- FACEBOOK SECTION -->
-		  <a href="https://www.facebook.com/TechnovineSolutions">
-			<i class="fa-brands fa-facebook fa-2x"></i>
-		  </a>
-  
-		  <!-- INSTAGRAM SECTION  -->
-		  <a href="https://www.instagram.com/technovinesolutions/">
-			<i class="fa-brands fa-instagram fa-2x"></i>
-		  
-		  
-		  </a>
-  
-		  <!-- TWITTER SECTION -->
-		  <a href="https://twitter.com/TechnovineSolut">
-			<i class="fa-brands fa-twitter fa-2x"></i>
+				<div class="d-grid  col-6 mx-auto mb-4 text-start">
+						<button class="btn btn-primary" type="button" id="button">Submit&nbsp;a&nbsp;Ticket</button>
+					</div>
+				</div>
+				<div class="col">
+				<img src="./src/img/datacenter-002 - Copy.jpeg" class="img-fluid rounded float-start mb-3" alt=" datacenter">
+				</div>
+			</div>
+		</div>
+	</section>
+		<!-- DATACENTER SECTION  CLOSE -->
+	
+	
+	
+
+	<!-- FOOTER SECTION START -->
+	<footer class="bg-dark text-white " id="footer">
+		<div class="container">
+		<div class="row mb-2">
+			<div class="col-md-3 mt-5">
+			<h4>About Us</h4>
+			<hr />
+			<p>We are skilled IT professionals who specialize in solving a range of problems that our clients may face in the realm of IT.
+	
+			</p>
+			<!-- FACEBOOK SECTION -->
+			<a href="https://www.facebook.com/TechnovineSolutions">
+				<i class="fa-brands fa-facebook fa-2x"></i>
+			</a>
+	
+			<!-- INSTAGRAM SECTION  -->
+			<a href="https://www.instagram.com/technovinesolutions/">
+				<i class="fa-brands fa-instagram fa-2x"></i>
 			
-		  <!-- LINKEDIN SECTION -->
-		  </a>
-		  <!-- <a href="#">
-			<i class="fa-brands fa-linkedin fa-2x"></i>
-		  </a> -->
-  
-		  <!-- WHATSAPP SECTION -->
-		  <!-- <a href="#">
-			<i class="fa-brands fa-whatsapp fa-2x"></i>
-		  </a> -->
 			
+			</a>
+	
+			<!-- TWITTER SECTION -->
+			<a href="https://twitter.com/TechnovineSolut">
+				<i class="fa-brands fa-twitter fa-2x"></i>
+				
+			<!-- LINKEDIN SECTION -->
+			</a>
+			<!-- <a href="#">
+				<i class="fa-brands fa-linkedin fa-2x"></i>
+			</a> -->
+	
+			<!-- WHATSAPP SECTION -->
+			<!-- <a href="#">
+				<i class="fa-brands fa-whatsapp fa-2x"></i>
+			</a> -->
+				
+			</div>
+			<div class="col-md-3 mt-5">
+			<h4>Quick Links</h4>
+			<hr />
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="/services.html" class="nav-link">Services</a> </li>
+				<li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a> </li>
+			</ul>
+			</div>
+			
+			<div class="col-md-3 mt-5">
+			<h4>Privacy and Terms</h4>
+			<hr />
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Terms & Coniditions</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">API Documentation</a> </li>
+			</ul>
+			</div>
+			<div class="col-md-3 mt-5">
+			<h4>Contact Info</h4>
+			<hr />
+			<p>
+				Spring, TX 77373 <br />
+				Call Us Now +1 (281) 912-6361 <br />
+				info@technvsolutions.com
+			</p>
+			</div>
 		</div>
-		<div class="col-md-3 mt-5">
-		  <h4>Quick Links</h4>
-		  <hr />
-		  <ul class="navbar-nav">
-			<li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-			<li class="nav-item"><a href="/services.html" class="nav-link">Services</a> </li>
-			<li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a> </li>
-		  </ul>
 		</div>
-		
-		<div class="col-md-3 mt-5">
-		  <h4>Privacy and Terms</h4>
-		  <hr />
-		  <ul class="navbar-nav">
-			<li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Terms & Coniditions</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">API Documentation</a> </li>
-		  </ul>
+		<div class="bg-dark text-white text-center py-4" id="copyright">
+		Copyright &copy; 2023 Technovine Solutions. All Rights Reserved.
 		</div>
-		<div class="col-md-3 mt-5">
-		  <h4>Contact Info</h4>
-		  <hr />
-		  <p>
-			Spring, TX 77373 <br />
-			Call Us Now +1 (281) 912-6361 <br />
-			info@technvsolutions.com
-		  </p>
-		</div>
-	  </div>
-	</div>
-	<div class="bg-dark text-white text-center py-4" id="copyright">
-	  Copyright &copy; 2023 Technovine Solutions. All Rights Reserved.
-	</div>
-  </footer>
-  <!-- FOOTER SECTION CLOSE -->
-</body>
+	</footer>
+	<!-- FOOTER SECTION CLOSE -->
+  </body>
 </html>
+
