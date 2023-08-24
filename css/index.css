@@ -329,4 +329,10 @@ footer p {
     .carousel-indicators {
         display: none;
     }
+
+    #digital-signage {
+        .carousel-caption h1 {
+            margin-top: 15px;
+        }
+    }
 }
