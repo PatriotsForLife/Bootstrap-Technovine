@@ -214,3 +214,19 @@ footer p {
     font-size: 1rem !important;
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+	.carousel-inner img {
+		height: 70%;
+	}
+	.c-item {
+		height: 70%;
+	}
+	.c-img {
+		height: 50%;
+}
+	.carousel-inner h1 {
+		font-size: 20px;
+	}
+}
+	
