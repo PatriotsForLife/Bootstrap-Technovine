@@ -1,7 +1,9 @@
 # Technovine Todo
 
 ## Help with Richard
-- [ ] Task
+- [ ] Image loading takes too long
+	- [x] Homepage
+	- [ ] Other pages
 - [ ] Task
 
 ---
