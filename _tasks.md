@@ -4,7 +4,7 @@
 - [ ] Image loading takes too long
 	- [x] Homepage
 	- [ ] Other pages
-- [ ] Task
+- [ ] add fixed margins to all main page headers
 
 ---
 
