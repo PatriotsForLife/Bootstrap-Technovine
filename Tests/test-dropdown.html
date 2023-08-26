@@ -108,29 +108,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         
         <!-- TOGGLE MENU CLOSE -->
         <script>
-          let serviceNavElement = document.getElementById("nav_service_object")
-let isTouch = false
-document.addEventListener("touchstart", (event) => {
-  console.log("touch")
-  isTouch = true
-});
+          let isTouch = false;
 
-serviceNavElement.addEventListener("mouseenter",function(){
-  if(isTouch){
-    return
-  }
-  serviceNavElement.href = "/Bootstrap-/services.html"
-  console.log(serviceNavElement)
-})
-
-serviceNavElement.addEventListener("mouseleave",function(){
-  if(isTouch){
-    return
-  }
-  serviceNavElement.href = "#"
-  console.log(serviceNavElement)
-
-})
+          document.addEventListener("touchstart", (event) => {
+            isTouch = true;
+          });
+          
+          // Get the dropdown element
+          let serviceNavElement = document.getElementById("nav_service_object");
+          
+          // Handle hover behavior on desktop
+          serviceNavElement.addEventListener("mouseenter", function () {
+            if (isTouch) {
+              return;
+            }
+            serviceNavElement.href = "/Bootstrap-/services.html";
+          });
+          
+          serviceNavElement.addEventListener("mouseleave", function () {
+            if (isTouch) {
+              return;
+            }
+            serviceNavElement.href = "#";
+          });
+          
+          // Handle click behavior on mobile
+          serviceNavElement.addEventListener("click", function (event) {
+            if (isTouch) {
+              event.preventDefault(); // Prevent the default link behavior
+              let dropdownMenu = this.parentElement.querySelector(".dropdown-menu");
+              if (dropdownMenu) {
+                dropdownMenu.classList.toggle("show");
+                // Close dropdown when clicking outside
+                serviceNavElement.addEventListener("click", function (event) {
+                  if (!dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("show");
+                  }
+                });
+              }
+            }
+          });   
         </script>
        
         </ul>
