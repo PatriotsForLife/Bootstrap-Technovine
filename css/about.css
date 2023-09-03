@@ -30,8 +30,8 @@ body {
   object-fit: cover;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+.dropdown-menu {
+  /* display: block; */
   background-color: hsl(210, 45%, 30%);
 }
 
@@ -86,8 +86,9 @@ footer a i {
 
 /* @media screen and (min-width: var(--mobile)) and (max-width: var(--tablet)) { */
 
-.dropdown:hover>.dropdown-menu {
-  display: block;
+.dropdown-menu {
+  /* display: block; */
+  --bs-dropdown-bg: hsl(210, 45%, 30%) !important;
   background-color: hsl(210, 45%, 30%);
   margin-top: 0;
   width: 175px;
@@ -193,3 +194,23 @@ footer i:hover {
 		opacity: 1;
 	}
 }
+
+/* OLD DROPDOWN HOVER CODE START */
+
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+} */
+
+/* @media screen and (max-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+} */
+
+/* OLD DROPDOWN HOVER CODE CLOSE */
