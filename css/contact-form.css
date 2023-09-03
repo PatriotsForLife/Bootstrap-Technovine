@@ -3,8 +3,8 @@
 body {
 	background: hsl(233, 47%, 96%);
 }
-.dropdown:hover .dropdown-menu {
-	display: block;
+.dropdown-menu {
+	/* display: block; */
 	background-color: hsl(210, 45%, 30%);
 }
 
@@ -150,3 +150,16 @@ body {
 .carousel-caption {
 	top: 30% !important;
 }
+
+/* OLD DROPDOWN HOVER CODE START */
+
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+} */
+
+/* OLD DROPDOWN HOVER CODE CLOSE */

@@ -3,8 +3,8 @@
 /* body {
 	background: #e8e8e8;
 } */
-.dropdown:hover .dropdown-menu {
-	display: block;
+.dropdown-menu {
+	/* display: block; */
 	background-color: hsl(210, 45%, 30%);
 }
 
@@ -119,3 +119,16 @@
 #nav_object {
 	position: relative;
 }
+
+/* OLD DROPDOWN HOVER CODE START */
+
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+} */
+
+/* OLD DROPDOWN HOVER CODE CLOSE */
