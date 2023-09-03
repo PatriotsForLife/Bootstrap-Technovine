@@ -178,19 +178,31 @@ footer a  i {
 		transition: 0.2s;
 	}
   
-  @media (min-width: 576px) {
-	.dropdown:hover > .dropdown-menu {
-		display: block;
-		background-color: hsl(210, 45%, 30%);
-		margin-top: 0;
-		width: 175px;
+  
+.dropdown-menu {
+    /* display: block; */
+    background-color: hsl(210, 45%, 30%);
+    margin-top: 0;
+    width: 175px;
 
-		.btn {
-			color: hsl(0, 0%, 100%);
-		}
+    .btn {
+        color: hsl(0, 0%, 100%);
+    }
 
-		.dropdown-item:hover {
-			background-color: hsl(210, 55%, 41%);
-		}
-	}
+    .dropdown-item:hover {
+        background-color: hsl(210, 55%, 41%);
+    }
 }
+
+/* OLD DROPDOWN HOVER CODE START */
+
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+} */
+
+/* OLD DROPDOWN HOVER CODE CLOSE */
