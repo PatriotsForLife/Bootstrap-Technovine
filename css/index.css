@@ -135,8 +135,8 @@ footer li:hover {
 }
 
 
-.dropdown:hover .dropdown-menu {
-	display: block;
+.dropdown-menu {
+	/* display: block; */
 	background-color: hsl(210, 45%, 30%);
 }
 
@@ -170,12 +170,12 @@ footer li:hover {
 
 
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
 	.dropdown:hover > .dropdown-menu {
 		display: block;
 		margin-top: 0;
 	}
-}
+} */
 /* NEW */
 
 footer p {
@@ -336,3 +336,23 @@ footer p {
         }
     }
 }
+
+/* OLD DROPDOWN HOVER CODE START */
+
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+} */
+
+/* @media screen and (max-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+} */
+
+/* OLD DROPDOWN HOVER CODE CLOSE */

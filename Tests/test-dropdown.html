@@ -14,7 +14,7 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="../css/index.css" />
+<link rel="stylesheet" href="../css/test-dropdown.css" />
 <!-- <link rel="stylesheet" href="./css/dropdown.css" /> -->
 <!-- <link rel="stylesheet" href="./css/login-modal.css"> -->
 <link
@@ -84,30 +84,43 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a href="/Bootstrap-/index.html" class="nav-link text-white" id="nav_home_object">Home</a></li>
-        <li class="nav-item"><a href="/Bootstrap-/about.html" class="nav-link text-white" id="nav_about_object">About</a></li>
-        <li class="nav-item dropdown" id="dropdown">
-          <a class="nav-link text-white nav-link dropdown-toggle" href="#" role="button"  aria-expanded="false" id="nav_service_object">
-          Services
+        <li class="nav-item"><a href="/Bootstrap-/about.html" class="nav-link text-white" data-bs-toggle="dropdown" id="nav_about_object">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
           </a>
           <ul class="dropdown-menu">
-          <!-- <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li> -->
-          <!-- <li><hr class="dropdown-divider"></li> -->
-          <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-/cctv.html">CCTV Services</a></li>
+            <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-/cctv.html">CCTV Services</a></li>
           <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/datacenter.html">Datacenter Support</a></li>
           <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/digital-signage.html">Digital Signage</a></li>
           <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/gen-support.html">General Support</a></li>
           <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/net-support.html">Network Support</a></li>
           <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/pos.html">POS Services</a></li>
           <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/telecom.html">Telecom Services</a></li>
-          
-          </ul>
         </li>
-        <li class="nav-item"><a href="/Bootstrap-/contact.html" class="nav-link text-white" id="nav_contact_object">Contact</a></li>
+        <!-- <li class="nav-item dropdown" id="dropdown"> -->
+          <!-- <a class="nav-link dropdown-toggle" href="#" role="button"  aria-expanded="false" id="nav_service_object">
+          Services
+          </a>
+          <ul class="dropdown-menu"> -->
+          <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li> -->
+          <!-- <li><hr class="dropdown-divider"></li> -->
+          <!-- <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-/cctv.html">CCTV Services</a></li>
+          <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/datacenter.html">Datacenter Support</a></li>
+          <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/digital-signage.html">Digital Signage</a></li>
+          <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/gen-support.html">General Support</a></li>
+          <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/net-support.html">Network Support</a></li>
+          <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/pos.html">POS Services</a></li>
+          <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/telecom.html">Telecom Services</a></li> -->
+          
+          <!-- </ul>
+        </li>
+        <li class="nav-item"><a href="/Bootstrap-/contact.html" class="nav-link text-white" id="nav_contact_object">Contact</a></li> -->
 
         
         <!-- TOGGLE MENU CLOSE -->
-        <script>
+        <!-- <script>
           let isTouch = false;
 
           document.addEventListener("touchstart", (event) => {
@@ -148,7 +161,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
               }
             }
           });   
-        </script>
+        </script> -->
        
         </ul>
       </div>
