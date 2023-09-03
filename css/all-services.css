@@ -78,12 +78,7 @@ footer li:hover {
     border: 1px solid hsl(24, 83%, 65%);
 }
 
-@media (min-width: 576px) {
-	.dropdown:hover > .dropdown-menu {
-		display: block;
-		margin-top: 0;
-	}
-}
+
 
 #crd {
 	background: hsl(0, 0%, 100%);
@@ -121,9 +116,10 @@ h3 {
 	color: hsl(24, 83%, 65%);
 }
 
-@media (min-width: 576px) {
-	.dropdown:hover > .dropdown-menu {
-		display: block;
+
+	.dropdown-menu {
+		/* display: block; */
+		--bs-dropdown-bg: hsl(210, 45%, 30%) !important;
 		background-color: hsl(210, 45%, 30%);
 		margin-top: 0;
 		width: 175px;
@@ -136,7 +132,7 @@ h3 {
 			background-color: hsl(210, 55%, 41%);
 		}
 	}
-}
+
 
 
 
