@@ -77,51 +77,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		<ul class="navbar-nav ms-auto">
 		<li class="nav-item"><a href="/Bootstrap-Technovine/index.html" class="nav-link text-white" id="nav_object">Home</a></li>
 		<li class="nav-item"><a href="/Bootstrap-Technovine/about.html" class="nav-link text-white" id="nav_object">About</a></li>
-		<li class="nav-item dropdown" id="dropdown">
-		  <a class="nav-link  text-white" href="/Bootstrap-Technovine/services.html" role="button"  aria-expanded="false" id="nav_object">
-		  Services
-		  </a>
-		  <ul class="dropdown-menu">
-		  <!-- <li><a class="dropdown-item" href="#">Action</a></li>
-		  <li><a class="dropdown-item" href="#">Another action</a></li> -->
-		  <!-- <li><hr class="dropdown-divider"></li> -->
-		  <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-Technovine/cctv.html">CCTV Services</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/datacenter.html">Datacenter Support</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/digital-signage.html">Digital Signage</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/gen-support.html">General Support</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/net-support.html">Network Support</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/pos.html">POS Services</a></li>
-		  <li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-Technovine/telecom.html">Telecom Services</a></li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Services
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item text-capitalize text-white" href="/Bootstrap-/cctv.html">CCTV Services</a></li>
+			<li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/datacenter.html">Datacenter Support</a></li>
+			<li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/digital-signage.html">Digital Signage</a></li>
+			<li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/gen-support.html">General Support</a></li>
+			<li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/net-support.html">Network Support</a></li>
+			<li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/pos.html">POS Services</a></li>
+			<li><a class="dropdown-item text-white text-capitalize" href="/Bootstrap-/telecom.html">Telecom Services</a></li>
+		  </li>
 		  
 		  </ul>
 		</li>
 		<li class="nav-item"><a href="/Bootstrap-Technovine/contact.html" class="nav-link text-white" id="nav_object">Contact</a></li>
 
-		<script>
-			// Get the Services dropdown link element
-			const servicesDropdown = document.getElementById('servicesDropdown');
-		  
-			// Redirect to the services page when the dropdown link is clicked
-			servicesDropdown.addEventListener('click', function(event) {
-			  event.preventDefault(); // Prevent default link behavior
-			  window.location.href = this.getAttribute('href');
-			});
-		  
-			// Add the hover effect on desktop devices
-			if (window.matchMedia('(min-width: 576px)').matches) {
-			  // When the mouse enters the dropdown link, show the dropdown menu
-			  servicesDropdown.addEventListener('mouseenter', function() {
-				this.setAttribute('aria-expanded', 'true');
-				this.nextElementSibling.classList.add('show');
-			  });
-		  
-			  // When the mouse leaves the dropdown link or the dropdown menu, hide the dropdown menu
-			  servicesDropdown.addEventListener('mouseleave', function() {
-				this.setAttribute('aria-expanded', 'false');
-				this.nextElementSibling.classList.remove('show');
-			  });
-			}
-		  </script>
+		
 		<!-- TOGGLE MENU CLOSE -->
 	</div>
 

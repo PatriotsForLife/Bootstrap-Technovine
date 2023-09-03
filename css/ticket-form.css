@@ -33,6 +33,15 @@
 	position: relative;
 }
 
+.dropdown-menu {
+	/* display: block; */
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+}
+
 @media (min-width: 576px) {
 	#nav_object::after {
 		content: '';
@@ -50,3 +59,16 @@
 		opacity: 1;
 	}
 }
+
+/* OLD DROPDOWN HOVER CODE START */
+
+/* .dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+} */
+
+/* OLD DROPDOWN HOVER CODE CLOSE */
