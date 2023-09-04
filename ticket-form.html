@@ -136,7 +136,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   <!-- TICKET RQUEST FORM START -->
   <div class="container mt-5 mb-5" id="container-background">
 	<h1 class="mb-4">Submit A Ticket</h1>
-	<form action="https://formsubmit.co/el/kenigo" method="POST">
+	<form action="https://api.web3forms.com/submit" method="POST">
+		<input type="hidden" name="access_key" value="06fbfd7e-6c1f-47f8-b69f-f2dccccdc107">
+		<input type="hidden" name="apikey" value="Y06fbfd7e-6c1f-47f8-b69f-f2dccccdc107">
+		<input type="hidden" name="redirect" value="https://patriotsforlife.github.io/Bootstrap-Technovine/thank-you.html">
+		<input type="hidden" name="subject" value="New Ticket Request Submission!">
 		<div class="mb-3">
 			<label for="Name" class="form-label">Full Name</label>
 			<input type="text" class="form-control" placeholder="Your Full Name" name="name" aria-describedby="emailHelp" required>
@@ -151,7 +155,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		</div>
 		<div class="mb-3">
 			<label for="Message" class="form-label">Type of Work</label>
-			<select class="form-select select-control" data-width="auto" aria-placeholder="" name="type of work" required>
+			<select class="form-select select-control" data-width="auto" aria-placeholder="" name="message" required>
 				<option selected>Select A Category</option>
 				<option class="select-control" name="type of work" value="CCTV / Alarm Systems">CCTV / Alarm Systems</option>
 				<option class="select-control" name="type of work" value="Desktop/Laptop">Desktop/Laptop</option>
@@ -179,9 +183,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 			<label for="Message" class="form-label">Required Materials/Equipment</label>
 			<textarea type="text" class="form-control" placeholder="What equipment or materials are required to resolve the issue?" name="needed materials/equipment" required></textarea>
 		</div>
-		<input type="hidden" name="_next" value="https://patriotsforlife.github.io/Bootstrap-Technovine/thank-you.html">
+		<!-- <input type="hidden" name="_next" value="https://patriotsforlife.github.io/Bootstrap-Technovine/thank-you.html"> -->
 		<!-- <input type="hidden" name="_captcha" value="false"> -->
-		<input type="hidden" name="_subject" value="New Ticket Request Submission!">
+		<!-- <input type="hidden" name="_subject" value="New Ticket Request Submission!"> -->
 		<button type="submit" class="btn btn-primary mb-3" id="submit-button">Submit</button>
 		</form>
 		<script>
