@@ -57,6 +57,7 @@ footer li:hover {
 	color: hsl(24, 83%, 65%);
 	transition: 0.2s;
   }
+  
 
 #footer {
   color: hsl(0, 0%, 100%);
@@ -76,5 +77,5 @@ footer p {
   }
 }
 
-@media screen and (min-width: var(--mobile-min)) and (max-width: var(--mobile-max)) {
+@media screen and (min-width: var(--mobile-min)) and (max-width: var(--mobile-max))
 
