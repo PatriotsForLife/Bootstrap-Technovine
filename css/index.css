@@ -42,11 +42,11 @@ hr {
 	
 }
 
-#rounded_circle {
+/* #rounded_circle {
 	width: 76px;
     aspect-ratio: 1;
     background-color: hsl(0, 0%, 75%);
-}
+} */
 
 footer a {
   color: hsl(0, 0%, 100%);
