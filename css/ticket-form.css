@@ -1,5 +1,77 @@
 @import "./.fonts.css";
 
+body {
+	background: hsl(233, 47%, 96%);
+	/* font-family: 'Montserrat', sans-serif; */
+}
+
+footer a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+footer a i {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  color: white;
+}
+
+footer li:hover {
+	color: hsl(24, 83%, 65%);
+	transition: 0.2s;
+  }
+  
+  footer i:hover {
+	color: hsl(24, 83%, 65%);
+	transition: 0.2s;
+  }
+
+#footer {
+  color: hsl(0, 0%, 100%);
+}
+
+#copyright {
+  border-top: 1px solid hsl(0, 0%, 20%);
+}
+
+.c-item {
+	height: 900px;
+	
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid hsl(0, 0%, 100%);
+	outline: none;
+	box-shadow: none;
+}
+
+.carousel-indicators .active {
+	background-color: hsl(18, 100%, 62%);
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='hsl(18, 100%, 62%)'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 .form-control {
 	border: 2px solid hsl(0, 0%, 0%);
 }
@@ -60,6 +132,90 @@
 	}
 }
 
+.c-item {
+	height: 900px;
+	
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+/* .carousel-caption {
+	margin-top: 10% !important;
+} */
+
+#caption-h2 {
+	text-shadow: 1px 1px 10px hsl(0, 0%, 0%);
+	padding:1rem;
+}
+
+#caption-p {
+	color: hsl(18, 100%, 62%);
+}
+
+#button {
+    background-color:hsl(18, 100%, 62%);
+    border: 1px solid hsl(18, 100%, 62%);
+}
+
+#button:hover {
+    background-color:hsl(24, 83%, 65%);
+    border: 1px solid hsl(24, 83%, 65%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	footer h4 {
+	  font-size: 1rem !important;
+	}
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+	  .carousel-inner img {
+		  height: 70%;
+	  }
+	  .c-item {
+		  height: 70%;
+	  }
+	  .c-img {
+		  height: 40%;
+  }
+	  .carousel-caption {
+		  position: absolute;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction: column;
+		  bottom: 1.25rem;
+		  padding: 1.25rem;
+		  color: #fff;
+		  text-align: center;
+		  
+		  /* Keep existing Bootstrap styles */
+		  right: initial;
+		  left: initial;
+	  }
+	  .carousel-inner h1 {
+		  font-size: 15px;
+	  }
+  
+	  .carousel-text h2 {
+		  margin-top: 0;
+	  }
+	  
+	  .carousel-text p {
+		  font-weight: 700;
+		  color: white;
+		  /* add a text shadow */
+	  }
+  }
 /* OLD DROPDOWN HOVER CODE START */
 
 /* .dropdown:hover .dropdown-menu {
