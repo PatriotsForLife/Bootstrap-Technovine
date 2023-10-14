@@ -1,0 +1,57 @@
+@import "./.fonts.css";
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid hsl(0, 0%, 100%);
+	outline: none;
+	box-shadow: none;
+}
+
+
+#nav_object {
+	position: relative;
+}
+
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: hsl(210, 45%, 30%);
+}
+
+.dropdown-item:hover {
+	background-color: hsl(210, 55%, 41%);
+}
+
+#dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-toggle {
+	color: white !important;
+	}
+
+	@media (min-width: 300px) {
+		#nav_object::after {
+			content: '';
+			opacity: 0;
+			transition: all 0.2s;
+			height: 2px;
+			width: 100%;
+			background: hsl(18, 100%, 62%);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		
+	 
+		#nav_object:hover::after {
+			opacity: 1;
+		}
+	}

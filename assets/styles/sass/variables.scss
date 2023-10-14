@@ -1,0 +1,43 @@
+//★ Colors
+	//▸ Site Base Colors
+	$site_primary-color: hsl(210, 55%, 41%);
+	$site_secondary-color: hsl(18, 100%, 62%);
+	$site_tertiary-color: hsl(220, 4%, 85%);
+
+	//▸ Site Element Colors
+	$banner_button-color: lighten($site_primary-color, 30%);
+
+//============================================================================
+
+
+
+
+
+//★ Sizes
+
+//▸ Media breakpoints (@media rule conditions)
+$desktop-min: 1200px;
+$laptop-min: 900px;
+$laptop-max: calc($desktop-min - 1px);
+$tablet-min: 720px;
+$tablet-max: calc($laptop-min - 1px);
+$mobile-min: 300px;
+$mobile-max: calc($tablet-min - 1px);
+
+
+
+//============================================================================
+
+
+
+
+//★ Text
+
+$banner_title-size: 3rem;
+
+
+$body_heading-size: 2rem;
+$body_heading-weight: 300;
+$body_heading-color: $site_primary-color;
+
+$body_para-size: 1rem;

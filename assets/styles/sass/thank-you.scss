@@ -1,0 +1,152 @@
+// Importing fonts from a separate CSS file
+@import "./.fonts.css";
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  /* ... */
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* ... */
+}
+
+body {
+  /* ... */
+}
+
+.site-header {
+  /* ... */
+}
+
+.site-header__title {
+  /* ... */
+}
+
+.main-content {
+  /* ... */
+}
+
+.main-content__checkmark {
+  /* ... */
+}
+
+.main-content__body {
+  /* ... */
+}
+
+@media only screen and (min-width: 40em) {
+  /* ... */
+}
+
+#sub-header {
+  color: hsl(18, 100%, 62%);
+}
+
+#navbar-color {
+  background-color: hsl(210, 45%, 30%);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  border: 1px solid hsl(0, 0%, 100%);
+  outline: none;
+  box-shadow: none;
+}
+
+hr {
+  border: 1.5px solid hsl(210, 55%, 41%);
+}
+
+#button {
+  background-color: hsl(18, 100%, 62%);
+  border-color: hsl(18, 100%, 62%);
+}
+
+.nav-link {
+  position: relative;
+
+  @media (min-width: 576px) {
+    &::after {
+      content: '';
+      opacity: 0;
+      transition: all 0.2s;
+      height: 2px;
+      width: 100%;
+      background: hsl(18, 100%, 62%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+#navmenu {
+  /* ... */
+}
+
+footer a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+footer a i {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  color: white;
+}
+
+#footer {
+  color: hsl(0, 0%, 100%);
+}
+
+#copyright {
+  border-top: 1px solid hsl(0, 0%, 20%);
+}
+
+@media (min-width: 576px) {
+  footer li:hover {
+    color: hsl(24, 83%, 65%);
+    transition: 0.2s;
+  }
+
+  footer i:hover {
+    color: hsl(24, 83%, 65%);
+    transition: 0.2s;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    background-color: hsl(210, 45%, 30%);
+    margin-top: 0;
+    width: 175px;
+
+    .btn {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .dropdown-item:hover {
+      background-color: hsl(210, 55%, 41%);
+    }
+  }
+}

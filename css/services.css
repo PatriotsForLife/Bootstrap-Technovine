@@ -1,0 +1,88 @@
+@import "./.fonts.css";
+
+/* body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(C:/Users/NewMayoAyo/Documents/_Dev/projects/Bootstrap-Technovine/src/src/img/contact004.jpeg);
+	background-size: cover;
+	background-position: center;
+	color: #fff !important;
+}
+
+.services {
+	margin: 90px auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+h1:after {
+	content: '';
+	display: block;
+	width: 150px;
+	height: 3px;
+	background: white;
+	margin: 10px auto;
+}
+
+.icon {
+	font-size: 40px;
+	color: #fff;
+	margin: 20px auto;
+	padding: 10px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+
+.col-md-3:hover {
+	box-shadow: 5px 7px 9px -3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+} */
+
+body {
+	background: hsl(233, 47%, 96%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+	color: hsl(0, 0%, 100%);
+}
+
+#footer {
+	color: hsl(0, 0%, 100%);
+}
+
+#copyright {
+	border-top: 1px solid hsl(0, 0%, 20%) ;
+}
+
+.c-item {
+	height: 480px;
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+
+#team-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 576px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+}
+
+#crd {
+	background: hsl(0, 0%, 100%);
+}

@@ -1,0 +1,144 @@
+:root {
+	--desktop-min: 1200px;
+	--laptop-min: 900px;
+	--laptop-max: calc(var(--desktop-min) - 1px);
+	--tablet-min: 720px;
+	--tablet-max: calc(var(--laptop-min) - 1px);
+	--mobile-min: 300px;
+	--mobile-max: calc(var(--tablet-min) - 1px);
+	}
+
+#navbar-color {
+	background-color: hsl(210, 45%, 30%);
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+	filter: brightness(0.6);
+}
+
+.carousel-caption {
+	margin-top: 20px;
+	position: absolute;
+	top: 60%;
+	
+	
+}
+
+.carousel-caption p {
+	font-size: 100%;
+	color: hsl(18, 100%, 62%);
+	padding-right: ;
+	transform: uppercase;
+	text-shadow: ;
+	
+}
+
+.carousel-caption h2 {
+	
+	font-size: 500%;
+	font-weight: 500;
+	padding-bottom: 1rem;
+	text-shadow: 1px 1px 10px hsl(0, 0%, 0%);
+	
+}
+
+.button {
+	padding-right: 100px;
+}
+
+#button {
+	
+	background-color:hsl(18, 100%, 62%);
+	border: 1px solid hsl(18, 100%, 62%);
+}
+
+#button:hover {
+	background-color:hsl(24, 100%, 65%);
+	border: 1px solid hsl(24, 100%, 65%);
+}
+
+@media screen and (min-width: var(--laptop-min)) and (max-width: var(--laptop-max)) {
+	.carousel-caption {
+		margin-top: 20px;
+		position: absolute;
+		top: 60%;
+		
+		
+	}
+	
+	.carousel-caption p {
+		color: hsl(18, 100%, 62%);
+		
+		transform: uppercase;
+		text-shadow: ;
+		
+	}
+	
+	.carousel-caption h2 {
+		
+		
+		
+	}
+	
+	.button {
+		padding-right: 90px;
+	}
+}
+
+@media screen and (min-width: var(--tablet-min)) and (max-width: var(--tablet-max)) {
+	.carousel-caption {
+		margin-top: 20px;
+		position: absolute;
+		top: 60%;
+		
+		
+	}
+	
+	.carousel-caption p {
+		color: hsl(18, 100%, 62%);
+		padding-left: 800px;
+		transform: uppercase;
+		text-shadow: ;
+		
+	}
+	
+	.carousel-caption h2 {
+		
+		
+		
+	}
+	
+	.button {
+		padding-right: 90px;
+	}
+}
+
+@media screen and (min-width: var(--mobile-min)) and (max-width: var(--mobile-max)) {
+	.carousel-caption {
+		margin-top: 20px;
+		position: absolute;
+		top: 60%;
+		
+		
+	}
+	
+	.carousel-caption p {
+		color: hsl(18, 100%, 62%);
+		padding-right: 10px;
+		transform: uppercase;
+		text-shadow: ;
+		
+	}
+	
+	.carousel-caption h2 {
+		
+		
+		
+	}
+	
+	.button {
+		padding-right: 10px;
+	}
+}

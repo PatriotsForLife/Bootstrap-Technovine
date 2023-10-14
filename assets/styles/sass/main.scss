@@ -1,0 +1,130 @@
+@import "../fonts.css";
+@import "./variables.scss";
+
+body {
+	background: hsl(233, 47%, 96%);
+	font-family: 'Montserrat', sans-serif;
+  }
+  
+  hr {
+	border: 1.5px solid hsl(210, 55%, 41%);
+  }
+  
+  #about-heading,
+  #mission-heading {
+	font-weight: 300;
+  }
+  
+  .crd {
+	background: hsl(233, 47%, 96%);
+	transition: all;
+  
+	&:hover {
+	  background: hsl(210, 55%, 41%);
+	  color: #fff;
+	  transition: 0.5s;
+	}
+  }
+  
+  .card img {
+	margin: auto;
+  }
+  
+  #rounded_circle {
+	width: 76px;
+	aspect-ratio: 1;
+	background-color: hsl(0, 0%, 75%);
+  }
+  
+  footer a {
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+  
+	i {
+	  color: hsl(0, 0%, 100%);
+	  text-decoration: none;
+	  color: white;
+	}
+  }
+  
+  #footer {
+	color: hsl(0, 0%, 100%);
+  }
+  
+  #copyright {
+	border-top: 1px solid hsl(0, 0%, 20%);
+  }
+  
+  .c-item {
+	height: 90%;
+  }
+  
+  .c-img,
+  #team-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+  }
+  
+  #sub-header {
+	color: hsl(18, 100%, 62%);
+  }
+  
+  #navbar-color {
+	background-color: hsl(210, 45%, 30%);
+  
+	.navbar-toggler-icon {
+	  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+  
+	.navbar-toggler {
+	  border: 1px solid hsl(0, 0%, 100%);
+	  outline: none;
+	  box-shadow: none;
+	}
+  }
+  
+  .carousel-indicators {
+	.active {
+	  background-color: hsl(18, 100%, 62%);
+	}
+  }
+  
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='hsl(18, 100%, 62%)'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+  
+  #button {
+	background-color: hsl(18, 100%, 62%);
+	border-color: hsl(18, 100%, 62%);
+  }
+  
+  .nav-link {
+	position: relative;
+  }
+//
+
+
+
+//★ Media Queries
+
+//▸ Desktop
+@media screen and (min-width: $desktop-min) {
+	//SCSS Code
+}
+
+//▸ laptop
+@media screen and (min-width: $laptop-min) and (max-width: $laptop-max) {
+	//SCSS Code
+}
+
+//▸ Tablet
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+	//SCSS Code
+}
+
+//▸ Mobile
+@media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+	//SCSS Code
+}

@@ -1,0 +1,79 @@
+@import "./.fonts.css";
+
+.myform {
+	max-width: 100%;
+}
+
+.modal-body {
+	padding: 0px;
+}
+
+
+
+.btn-close {
+	position: absolute;
+	right: 0;
+	padding: 1em;
+}
+
+.modal-content {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.modal-body {
+	padding: 0px;
+}
+
+#modal-styling h1 {
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+.myform {
+	padding: 2em;
+	max-width: 100%;
+	color: #fff;
+	box-shadow: 0 4px 6px 0px rgba(22,22,26,0,0.18);
+	@media(max-width: 576px) {
+		max-width: 90%;
+		margin: 0px auto;
+		padding: 1em;
+	}
+
+	.form-control {
+		background-color: inherit;
+		color: #fff;
+		padding-left: 0px;
+		border: 0px;
+		border-bottom: 1px solid #fff;
+	}
+}
+
+.myform .btn {
+	width: 100%;
+	font-weight: none;
+	background-color: #fff;
+	border-radius: 0;
+	padding: 0.5em 0;
+}
+
+.myform .btn:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+#modal-styling p {
+	text-align: center;
+	padding-top: 2em;
+	color: grey;
+}
+
+#modal-styling p a {
+	color: #e1e1e1;
+	text-decoration: none;
+}
+
+#modal-styling p a:hover {
+	color: #fff;
+}
