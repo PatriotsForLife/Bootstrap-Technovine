@@ -57,13 +57,43 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	      >
         <link rel="icon" type="image/x-icon" href="./src/img/favicon-32x32.png">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the navbar and footer elements
+    var navbar = document.querySelector('nav');
+    var footer = document.querySelector('footer');
+  
+    // Calculate the height of the navbar and footer
+    var navbarHeight = navbar.offsetHeight;
+    var footerHeight = footer.offsetHeight;
+  
+    // Set the min-height of the body to ensure it fills the screen
+    document.body.style.minHeight = window.innerHeight + 'px';
+  
+    // Disable scrolling beyond the navbar and footer
+    document.body.style.overflow = 'hidden';
+  
+    // Enable scrolling when the window is resized
+    window.addEventListener('resize', function () {
+      document.body.style.minHeight = window.innerHeight + 'px';
+    });
+  
+    // Enable scrolling when the user scrolls back to the top
+    window.addEventListener('scroll', function () {
+      if (window.scrollY <= navbarHeight) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+</script>
 
   </head>
   <body>
     
     <!-- NAVIGATION BAR START -->
-    <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar-color">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top fixed-top" id="navbar-color">
       <div class="container">
         <a href="./index.html">
           <img src="../src/img/logo-topnav.png" height="45" width="225" class="img-fluid"/>
@@ -106,29 +136,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         <li class="nav-item"><a href="/Bootstrap-Technovine/contact.html" class="nav-link text-white" id="nav_object">Contact</a></li>
 
         <script>
-          // Get the Services dropdown link element
-          const servicesDropdown = document.getElementById('servicesDropdown');
-        
-          // Redirect to the services page when the dropdown link is clicked
-          servicesDropdown.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
-            window.location.href = this.getAttribute('href');
-          });
-        
-          // Add the hover effect on desktop devices
-          if (window.matchMedia('(min-width: 576px)').matches) {
-            // When the mouse enters the dropdown link, show the dropdown menu
-            servicesDropdown.addEventListener('mouseenter', function() {
-              this.setAttribute('aria-expanded', 'true');
-              this.nextElementSibling.classList.add('show');
-            });
-        
-            // When the mouse leaves the dropdown link or the dropdown menu, hide the dropdown menu
-            servicesDropdown.addEventListener('mouseleave', function() {
-              this.setAttribute('aria-expanded', 'false');
-              this.nextElementSibling.classList.remove('show');
-            });
-          }
+          var prevScrollPos = window.pageYOffset;
+
+          window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+      
+            if (prevScrollPos > currentScrollPos) {
+              // Scrolling up
+              document.body.style.paddingTop = "56px"; /* Adjust this value based on your navbar's height */
+              document.body.style.marginBottom = "100px"; /* Adjust this value based on your footer's height */
+            } else {
+              // Scrolling down
+              document.body.style.paddingTop = "0";
+              document.body.style.marginBottom = "0";
+            }
+      
+            prevScrollPos = currentScrollPos;
+          };
         </script>
         <!-- TOGGLE MENU CLOSE -->
 
@@ -815,7 +839,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <!-- OUR LATEST BLOG SECTION CLOSE -->
 
     <!-- FOOTER SECTION START -->
-    <footer class="bg-dark text-white " id="footer">
+    <footer class="bg-dark text-white fixed-bottom" id="footer">
       <div class="container">
         <div class="row mb-2">
           <div class="col-md-3 mt-5">
