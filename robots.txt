@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /.old/
 Disallow: /Tests/
 Disallow: /pages/
+Disallow: /extras.md/
+Disallow: /README.md/
