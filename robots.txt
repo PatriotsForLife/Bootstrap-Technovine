@@ -6,3 +6,4 @@ Disallow: /extras.md/
 Disallow: /README.md/
 Disallow: /*.md$
 Disallow: /drafts/
+Disallow: /ticket-form.html/
