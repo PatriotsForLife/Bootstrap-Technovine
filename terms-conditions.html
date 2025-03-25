@@ -87,7 +87,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	<nav class="navbar navbar-expand-lg navbar-light  py-3 sticky-top" id="navbar-color">
 		<div class="container">
 		<a href="./">
-			<img src="./src/img/logo-topnav.png"  height="45" width="225" class="img-fluid"/>
+			<picture>
+				<source srcset="./src/img/webp/logo-topnav.webp" type="image/webp">
+				<img 
+				  src="./src/img/logo-topnav.png" 
+				  alt="Technovine Solutions Logo" 
+				  height="45" 
+				  width="225" 
+				  class="img-fluid"
+				  loading="eager"
+				  decoding="async"
+				>
+			  </picture>
 		</a>
 
 		<!-- TOGGLE MENU START -->

@@ -87,7 +87,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	<nav class="navbar navbar-expand-lg navbar-light  py-3 sticky-top" id="navbar-color">
 		<div class="container">
 		<a href="./">
-			<img src="./src/img/logo-topnav.png"  height="45" width="225" class="img-fluid"/>
+			<picture>
+				<source srcset="./src/img/webp/logo-topnav.webp" type="image/webp">
+				<img 
+				  src="./src/img/logo-topnav.png" 
+				  alt="Technovine Solutions Logo" 
+				  height="45" 
+				  width="225" 
+				  class="img-fluid"
+				  loading="eager"
+				  decoding="async"
+				>
+			  </picture>
 		</a>
 
 		<!-- TOGGLE MENU START -->
@@ -160,7 +171,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		<div id="herocarousel" class="carousel slide" data-bs-ride="carousel" >
 			<div class="carousel-inner">
 				<div class="carousel-item active c-item">
-				<img src="./src/img/digital-signage-005.jpeg" class="d-block w-100 c-img " alt="Digital signage of a welcome sign.">
+					<picture>
+						<source srcset="./src/img/webp/digital-signage-005.webp" type="image/webp">
+						<img src="./src/img/digital-signage-005.jpeg" class="d-block w-100 c-img " alt="Digital signage of a welcome sign." loading="lazy" decoding="async">
+					</picture>
 				<div class="carousel-caption mt-3 top-0 ">
 					<!-- <p class="mt-5 text-uppercase text-start">Contact Us</p> -->
 					<div id="page_header-text" class="carousel-text">
@@ -211,7 +225,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 					</div>
 				</div>
 				<div class="col">
-				<img src="./src/img/digital-signage-001.jpeg" class="img-fluid rounded float-start mb-3" alt=" digital signage">
+					<picture>
+						<source srcset="./src/img/webp/digital-signage-001.webp" type="image/webp">
+						<img src="./src/img/digital-signage-001.jpeg" class="img-fluid rounded float-start mb-3" alt=" digital signage" loading="lazy" decoding="async">
+					</picture>
 				</div>
 			</div>
 		</div>

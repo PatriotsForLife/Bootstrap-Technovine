@@ -118,7 +118,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top" id="navbar-color">
 	<div class="container">
 	<a href="./">
-		<img src="./src/img/logo-topnav.png" alt=" Technovine Solutions logo" height="45" width="225" class="img-fluid"/>
+		<picture>
+            <source srcset="./src/img/webp/logo-topnav.webp" type="image/webp">
+            <img 
+              src="./src/img/logo-topnav.png" 
+              alt="Technovine Solutions Logo" 
+              height="45" 
+              width="225" 
+              class="img-fluid"
+              loading="eager"
+              decoding="async"
+            >
+          </picture>
 	</a>
 
 	<!-- TOGGLE MENU START -->
@@ -190,7 +201,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	<div id="herocarousel" class="carousel slide">
 		  <div class="carousel-inner">
 			<div class="carousel-item active c-item">
+				<picture>
+					<source srcset="./src/img/webp/contact004.webp" type="image/webp">
 			  <img src="./src/img/contact004.jpeg" class="d-block w-100 c-img" alt="IT technician working in a network room.">
+				</picture>
 			  <div class="carousel-caption mt-5 top-0 ">
 			
 				<p class=" dtext-uppercase text-center mt-3" id="caption-p">Contact&nbsp;Us</p>

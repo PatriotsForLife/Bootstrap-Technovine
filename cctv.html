@@ -88,7 +88,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	<nav class="navbar navbar-expand-lg navbar-light  py-3 sticky-top" id="navbar-color">
 		<div class="container">
 		<a href="./">
-			<img src="./src/img/logo-topnav.png"  height="45" width="225" class="img-fluid"/>
+			<picture>
+				<source srcset="./src/img/webp/logo-topnav.webp" type="image/webp">
+				<img 
+				  src="./src/img/logo-topnav.png" 
+				  alt="Technovine Solutions Logo" 
+				  height="45" 
+				  width="225" 
+				  class="img-fluid"
+				  loading="eager"
+				  decoding="async"
+				>
+			</picture>
 		</a>
 
 		<!-- TOGGLE MENU START -->
@@ -137,7 +148,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		<div id="herocarousel" class="carousel slide" data-bs-ride="carousel" >
 			<div class="carousel-inner">
 				<div class="carousel-item active c-item">
-				<img src="./src/img/cctv.jpeg" class="d-block w-100 c-img" alt="CCTV cameras on a wall.">
+					<picture>
+						<source srcset="./src/img/webp/cctv.webp" type="image/webp">
+						<img src="./src/img/cctv.jpeg" class="d-block w-100 c-img" alt="CCTV cameras on a wall." loading="lazy" decoding="async">
+					</picture>
 				<div class="carousel-caption top-0 mt-3">
 					
 					<h2 class="display-3 fw-bolder text-capitalize" id="caption-h2">CCTV Services</h2>
@@ -176,7 +190,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 					</div>
 				</div>
 				<div class="col">
-				<img src="./src/img/cctv-003.jpeg" class="img-fluid rounded float-start mb-3" alt="IT technician providing CCTV services by working on a CCTV camera.">
+					<picture>
+						<source srcset="./src/img/webp/cctv-003.webp" type="image/webp">
+						<img src="./src/img/cctv-003.jpeg" class="img-fluid rounded float-start mb-3" alt="IT technician providing CCTV services by working on a CCTV camera." loading="lazy" decoding="async">
+					</picture>
 				</div>
 			</div>
 		</div>
